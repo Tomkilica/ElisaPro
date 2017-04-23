@@ -1,0 +1,196 @@
+body, div, p, h1, h2, h3, h4, h5, h6, nav, ul, li, span, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #3f2803;
+
+}
+.hero {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.hero .opacity {
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.hero img {
+    width: 100%;
+}
+.about {
+    width: 100%;
+    float: left;
+    margin: 150px 0;
+}
+.about .box {
+    width: 85%;
+    margin: 0 auto;
+}
+.about .box h2 {
+    padding-top: 60px;
+}
+.about .box .text {
+    width: 45%;
+}
+.about .box p {
+    padding: 20px 0;
+}
+.about .box p:nth-of-type(5){
+    width: 100%;
+}
+.about .box .img {
+    width: 50%;
+    float: right;
+}
+.about .box .img img {
+    width: 95%;
+    float: right;
+}
+.counter {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+}
+.counter img {
+    width: 100%;
+    height: auto;
+}
+.counter .opacity {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.counter .counter-content {
+    position: absolute;
+    z-index: 99999999;
+    top: 0;
+    width: 100%;
+}
+.counter .box {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.counter .box .counter-el {
+    width: 33.3%;
+}
+.counter .box .counter-el .number {
+    display: flex;
+    justify-content: center;
+}
+.counter .box .counter-el .number span {
+    font-size: 60px;
+}
+.counter .box .counter-el .number span,
+.counter .box .counter-el h5 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.products .box .img {
+    float: left;
+}
+.products .box .text {
+    float: right;
+    width: 45%;
+}
+.galleria {
+    width: 100%;
+    float: left;
+}
+.galleria .owl-carousel {
+    margin-bottom: 150px;
+}
+.galleria .owl-carousel .item a {
+    font-size: 16px;
+    line-height: 21px;
+    color: #3f2803;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+    display: block;
+    font-family: "Open Sans";
+    transition: color 1s;
+
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #a0d445;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #3f2803;
+}
+.owl-theme .owl-dots .owl-dot {
+    margin-top: 20px;
+}
+.galleria .owl-carousel .item h6 {
+    font-size: 11px;
+    line-height: 16px;
+    color: #a0d445;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.galleria .owl-carousel .item h6:nth-of-type(2) {
+    color: #3f2803;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-transform: lowercase;
+}
+.galleria .owl-carousel .item a:hover{
+    color: #a0d445;
+    cursor: pointer;
+    transition: color 1s;
+}
+.galleria .owl-carousel .item .img button {
+    width: 150px;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 1.1;
+    border: 0;
+    outline: 0;
+    left: 50%;
+    position: absolute;
+    cursor: pointer;
+    top: -50px;
+    background: #3f2803;
+    margin-left: -75px;
+    font-family: inherit;
+    color: #fff;
+    transition: background 1s, top 1s;
+}
+.galleria .owl-carousel .item .img {
+    overflow: hidden;
+    cursor: pointer;
+}
+.galleria .owl-carousel .item:hover button{
+    top: 105px;
+    transition: top 1s;
+}
+.galleria .owl-carousel .item .img button:hover {
+    background: #a0d445;
+    transition: background 1s;
+}
+.galleria .owl-theme .owl-nav {
+    display: none;
+}
+
+
+
+
+

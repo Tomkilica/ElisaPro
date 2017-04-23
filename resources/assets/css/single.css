@@ -1,0 +1,103 @@
+.product {
+    width: 100%;
+    float: left;
+    height: 600px;
+    margin: 100px 0 80px;
+}
+.product .box {
+    width: 80%;
+    margin: 0 auto;
+}
+.product .box .img {
+    width: 40%;
+    float: left;
+}
+.product .box .content {
+    width: 60%;
+    float: left;
+}
+.product .box .content .text {
+    width: 80%;
+    margin: 0 auto;
+}
+.product .box .img img {
+    width: 100%;
+}
+.product .box .content h6 {
+    color: #3f2803;
+}
+.product .box .content p {
+    color: #777777;
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 14px;
+}
+.product .box .content .qty {
+    margin-top: 60px;
+}
+
+.product .box .content input {
+    width: 60px;
+    height: 30px;
+    border: 2px solid #3f2803;
+    font-size: 19px;
+    text-align: center;
+}
+.product .box .content button {
+    width: 30px;
+    font-size: 18px;
+    height: 30px;
+    outline: none;
+    border: 2px solid #3f2803;
+    background: #3f2803;
+    color: #fff;
+    cursor: pointer;
+}
+.product .box .content button:last-child {
+    width: 200px;
+    height: 30px;
+    letter-spacing: 1.5;
+    background-color: #9f9381;
+    border: 2px solid #9f9381;
+    margin-left: 25px;
+    transition: background 1s, border 1s;
+}
+
+.product .box .content button:hover {
+    background: #a0d445;
+    transition: background 1s, border 1s;
+    border: 2px solid #a0d445;
+
+}
+.product .box .content .table {
+    margin-top: 70px;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    border: none;
+    border-bottom:2px solid #a0d445;
+}
+.product .box .content .table p {
+    padding-top: 20px;
+    font-size: 13px;
+}
+.nav>li>a {
+    font-size: 14px;
+    transition: color 1s;
+}
+.nav-tabs>li>a:hover {
+    border: 1px solid transparent;
+}
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: transparent;
+    color: #a0d445;
+    transition: color 1s;
+}
+
+
+
+
+
+

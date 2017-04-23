@@ -1,0 +1,67 @@
+footer {
+    width: 100%;
+    float: left;
+    border-top: 2px solid #86da27;
+}
+footer .box {
+    width: 85%;
+    margin: 0 auto;
+}
+footer .box .address {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+footer .box .address .first {
+    width: 50%;
+    float: left;
+}
+footer .box .address .second {
+    width: 30%;
+    float: left;
+}
+footer .box .mail {
+    width: 20%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+footer .box .address .first img,
+footer .box .address .second img {
+    float: left;
+}
+footer .box .address .first .text,
+footer .box .address .second .text {
+    float: left;
+    padding-top: 10px;
+
+}
+footer .box .address .first h5,
+footer .box .address .second h5 {
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #adadad;
+    font-weight: normal;
+}
+footer .box .mail img {
+    float: left;
+}
+footer .box .mail .content a {
+    font-size: 16px;
+    color: #adadad;
+    font-weight: normal;
+    float: left;
+    padding-top: 23px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+footer .green-line {
+    width: 100%;
+    float: left;
+    height: 20px;
+    background: #86da27;
+    margin-top: 40px;
+}
+footer .green-line h6 {
+    text-align: center;
+}
