@@ -25,14 +25,12 @@
     width: 85%;
     margin: 0 auto;
 }
-.about .box h2 {
-    padding-top: 60px;
-}
 .about .box .text {
     width: 45%;
 }
 .about .box p {
     padding: 20px 0;
+    font-size: 16px;
 }
 .about .box p:nth-of-type(5){
     width: 100%;
@@ -89,6 +87,7 @@
 }
 .counter .box .counter-el .number span,
 .counter .box .counter-el h5 {
+    font-family: 'Playfair Display', serif;
     color: #fff;
     text-align: center;
     text-transform: uppercase;

@@ -1,13 +1,13 @@
 <!doctype>
 <html>
     <head>
+        <link rel="stylesheet" roperty="stylesheet" id="tp-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.6.4" type="text/css" media="all">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./resources/assets/fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./resources/assets/css/header.css">
         <link rel="stylesheet" type="text/css" href="./resources/assets/css/footer.css">
-        <link property="stylesheet" rel="stylesheet" id="tp-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.6.4" type="text/css" media="all">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./resources/assets/js/jQueryV3.1.1.js"></script>
+        <script type="text/javascript" src="./resources/assets/js/bootstrapV3.3.7.js"></script>
     </head>
     <body>
         <header>
@@ -16,11 +16,11 @@
                 <div class="user">
                     <div class="login">
                         <img src="./resources/assets/img/icons/login.png">
-                        <a>Prijavi se</a>
+                        <a href="{{url('/')}}">Prijavi se</a>
                     </div>
                     <div class="regist">
                         <img src="./resources/assets/img/icons/regis.png">
-                        <a>Novi kupac</a>
+                        <a href="{{url('/registration')}}">Registruj se</a>
                     </div>
                 </div>
                 <div class="img">
@@ -35,8 +35,8 @@
             </div>
             <nav>
                 <ul class="menu">
-                    <li><a>Naslovna</a></li>
-                    <li><a>Internet Prodavnica</a></li>
+                    <li><a href="{{url('/')}}">Naslovna</a></li>
+                    <li><a href="{{url('/')}}">Internet Prodavnica</a></li>
                 </ul>
             </nav>
         </header>

@@ -1,16 +1,13 @@
 @extends('app')
     <head>
-        <link property="stylesheet" rel="stylesheet" id="tp-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.6.4" type="text/css" media="all">
-        <link rel="stylesheet" href="./local/resources/assets/fonts/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="./local/resources/assets/css/single.css">
-
+        <link rel="stylesheet" type="text/css" href="./resources/assets/css/single.css">
     </head>
 @section('content')
     <body>
         <section class="product">
             <div class="box">
                 <div class="img">
-                    <img src="./local/resources/assets/img/products_large/omeksivac_za_rublje.png">
+                    <img src="./resources/assets/img/products_large/omeksivac_za_rublje.png">
                 </div>
                 <div class="content">
                     <div class="text">

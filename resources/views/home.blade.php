@@ -1,18 +1,34 @@
 
-@extends('app')
 
-
-@section('content')
+<html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
+        <link rel="stylesheet" roperty="stylesheet" id="tp-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.6.4" type="text/css" media="all">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./resources/assets/css/header.css">
+        <link rel="stylesheet" type="text/css" href="./resources/assets/css/footer.css">
         <link rel="stylesheet" type="text/css" href="./resources/assets/css/owl.carousel.css">
-        <link rel="stylesheet" type="text/css" href="./resources/assets/css/owl.theme.default.min.css">
-        <link type="text/css" rel="stylesheet" href="./resources/assets/css/home.css">
-        {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--}}
-
+        <link type="text/css" rel="stylesheet" href="./resources/assets/css/home.css">        
+        <script type="text/javascript" src="./resources/assets/js/jQueryV3.1.1.js"></script>
+        <script type="text/javascript" src="./resources/assets/js/bootstrapV3.3.7.js"></script>
         <script type="text/javascript" src="./resources/assets/js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="./resources/assets/js/home.js"></script>
     </head>
     <body>
+        <header>
+            <div class="top"></div>
+            <div class="middle">
+                <div class="img">
+                    <img src="./resources/assets/img/icons/logo2.png">
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="{{url('/')}}">Naslovna</a></li>
+                    <li><a href="{{url('/')}}">Internet Prodavnica</a></li>
+                </ul>
+            </nav>
+        </header>
         <section class="hero">
             <div class="opacity"></div>
             <img src="./resources/assets/img/home/3.jpg">
@@ -48,7 +64,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="about products">
             <div class="box">
@@ -211,7 +226,36 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="box">
+                <div class="address">
+                    <div class="first">
+                        <img src="./resources/assets/img/icons/pointer.png">
+                        <div class="text">
+                            <h5>Svetozara Miletića 27a, 26 000 Pančevo, Srbija</h5>
+                            <h5>Radno vreme: ponedeljak-petak 8 - 15h</h5>
+                            <h5>Telefon: +381 64 137 46 42</h5>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <img src="./resources/assets/img/icons/pointer.png">
+                        <div class="text">
+                            <h5>Novi Sad</h5>
+                            <h5>Telefon: +381 60 707 71 40</h5>
+                        </div>
+                    </div>
+                    <div class="mail">
+                        <div class="content">
+                            <img src="./resources/assets/img/icons/mail.png">
+                            <a href="mailto:elisa@elisa.rs">elisa@elisa.rs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="green-line">
+                <h6>&copy;copyright 2017</h6>
+            </div>
+        </footer>
     </body>
+</html>
 
-
-@endsection

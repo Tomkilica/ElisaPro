@@ -72,9 +72,9 @@
 .product .box .content .table {
     margin-top: 70px;
 }
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
+.table .nav-tabs>li.active>a,
+.table .nav-tabs>li.active>a:focus,
+.table .nav-tabs>li.active>a:hover {
     border: none;
     border-bottom:2px solid #a0d445;
 }
