@@ -12,6 +12,7 @@
 <section class="regis">
     <form>
         <input type="text" placeholder="ime kupca">
+        <input type="text" placeholder="prezime kupca">
         <input type="email" placeholder="email adresa">
         <input type="email" placeholder="potvrda email adrese">
         <input type="password" placeholder="lozinka">
