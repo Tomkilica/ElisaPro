@@ -1,0 +1,45 @@
+.regis {
+    width: 100%;
+    float: left;
+    margin: 100px 0;
+}
+.regis form {
+    width: 30%;
+    margin: 0 auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.regis form input {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    line-height: 2;
+    font-weight: 600;
+    border: 2px solid #3f2803;
+    letter-spacing: 1.5;
+}
+.regis form input:focus {
+    border-color: #a0d445;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #dad6d6;
+}
+.regis form input[type="submit"] {
+    width: 30%;
+    background: #a0d445;
+    color: #fff;
+    line-height: 2.5;
+    letter-spacing: 1.5;
+    cursor: pointer;
+    transition: background 1s;
+    border: none;
+
+}
+.regis form input[type="submit"]:hover {
+    background: #3f2803;
+    transition: background 1s;
+}

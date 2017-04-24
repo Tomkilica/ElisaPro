@@ -13,3 +13,4 @@
 
 Route::get('/', 'HomeController@home');
 Route::get('/single', 'ShopController@single');
+Route::get('/registration', 'RegistrationController@create');

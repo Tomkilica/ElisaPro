@@ -7,6 +7,15 @@ body, div, p, h1, h2, h3, h4, h5, h6, nav, ul, li, span, a {
     color: #3f2803;
 
 }
+body, div, p, h1, h2, h3, h4, h5, h6, nav, ul, li, span, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #3f2803;
+
+}
 h1 {
     font-size: 60px;
     line-height: 40px;

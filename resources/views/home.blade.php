@@ -1,17 +1,17 @@
 
 @extends('app')
 
+
+@section('content')
     <head>
         <link rel="stylesheet" type="text/css" href="./resources/assets/css/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="./resources/assets/css/owl.theme.default.min.css">
         <link type="text/css" rel="stylesheet" href="./resources/assets/css/home.css">
-        <link property="stylesheet" rel="stylesheet" id="tp-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.6.4" type="text/css" media="all">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--}}
+
         <script type="text/javascript" src="./resources/assets/js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="./resources/assets/js/home.js"></script>
-
     </head>
-@section('content')
     <body>
         <section class="hero">
             <div class="opacity"></div>
