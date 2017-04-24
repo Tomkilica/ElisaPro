@@ -1,7 +1,7 @@
 .regis {
     width: 100%;
     float: left;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 .regis form {
     width: 30%;
@@ -11,10 +11,9 @@
 .regis form input {
     width: 100%;
     float: left;
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 13px;
     padding-left: 10px;
-    text-transform: uppercase;
     line-height: 2;
     font-weight: 600;
     border: 2px solid #3f2803;
@@ -27,6 +26,8 @@
 
 ::-webkit-input-placeholder {
     color: #dad6d6;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 .regis form input[type="submit"] {
     width: 30%;
@@ -42,4 +43,13 @@
 .regis form input[type="submit"]:hover {
     background: #3f2803;
     transition: background 1s;
+}
+.regis form .massage {
+    height: 15px;
+    float: left;
+    width: 100%;
+}
+.regis form p {
+    color: #ff0000;
+    float: left;
 }

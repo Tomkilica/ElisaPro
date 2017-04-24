@@ -10,17 +10,54 @@
 @section('content')
 <body>
 <section class="regis">
-    <form>
-        <input type="text" placeholder="ime kupca">
-        <input type="text" placeholder="prezime kupca">
-        <input type="email" placeholder="email adresa">
-        <input type="email" placeholder="potvrda email adrese">
-        <input type="password" placeholder="lozinka">
-        <input type="password" placeholder="potvrda lozinke">
-        <input type="tel" placeholder="broj telefona">
-        <input type="text" placeholder="adresa dostave">
+    <form method="POST" action="registration">
+        {{ csrf_field() }}
+        <input type="text" name="firstName" placeholder="ime kupca" value="{{ old('firstName') }}" required>
+        <div class="massage">
+            @if($errors->get('firstName'))
+                <p>Polje mora biti popunjeno</p>
+            @endif
+        </div>
+        <input type="text" name="lastName" placeholder="prezime kupca" value="{{ old('lastName') }}" required >
+        <div class="massage">
+            @if($errors->get('lastName'))
+                <p>Polje mora biti popunjeno</p>
+            @endif
+        </div>
+        <input type="email" name="email" placeholder="email adresa" value="{{ old('email') }}" required>
+        <div class="massage">
+            @if($errors->get('email'))
+                <p>Upisana email adresa mora biti ista kao i potvrđena email adresa</p>
+            @endif
+        </div>
+        <input type="email" name="email_confirmation" placeholder="potvrda email adrese" value="" required>
+        <div class="massage"></div>
+        <input type="password" name="password" placeholder="lozinka" value="123" >
+        <div class="massage">
+            @if($errors->get('password'))
+            <p>Lozinka mora imati minimum 6 karaktera i biti ista kao potvrđena</p>
+            @endif
+        </div>
+        <input type="password" name="password_confirmation" placeholder="potvrda lozinke" value="123123" >
+        <div class="massage"></div>
+        <input type="tel" name="tel" placeholder="broj telefona" value="{{ old('tel') }}" required>
+        <div class="massage">
+            @if($errors->get('tel'))
+                <p>Polje mora biti popunjeno</p>
+            @endif
+        </div>
+        <input type="text" name="address" placeholder="adresa dostave" value="{{ old('address') }}" required>
+        <div class="massage">
+            @if($errors->get('address'))
+                <p>Polje mora biti popunjeno</p>
+            @endif
+        </div>
         <input type="submit" value="Registruj se">
     </form>
+
+
+
+
 </section>
 
 </body>
