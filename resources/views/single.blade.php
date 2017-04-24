@@ -10,7 +10,7 @@
         <section class="product">
             <div class="box">
                 <div class="img">
-                    <img src="./local/resources/assets/img/Omeksivac za rublje veca.png">
+                    <img src="./local/resources/assets/img/products_large/omeksivac_za_rublje.png">
                 </div>
                 <div class="content">
                     <div class="text">

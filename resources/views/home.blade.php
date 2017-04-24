@@ -15,12 +15,12 @@
     <body>
         <section class="hero">
             <div class="opacity"></div>
-            <img src="./resources/assets/img/3.jpg">
+            <img src="./resources/assets/img/home/3.jpg">
         </section>
         <section class="about">
             <div class="box">
                 <div class="img">
-                    <img src="./resources/assets/img/7.jpg">
+                    <img src="./resources/assets/img/home/7.jpg">
                 </div>
                 <div class="text">
                     <h2>O nama</h2>
@@ -31,7 +31,7 @@
         </section>
         <section id="counter" class="counter">
             <div class="opacity"></div>
-            <img src="./resources/assets/img/5.png">
+            <img src="./resources/assets/img/home/5.png">
             <div class="counter-content">
                 <div class="box">
                     <div class="counter-el">
@@ -53,7 +53,7 @@
         <section class="about products">
             <div class="box">
                 <div class="img">
-                    <img src="./resources/assets/img/6.jpg">
+                    <img src="./resources/assets/img/home/6.jpg">
                 </div>
                 <div class="text">
                     <h2>O proizvodima</h2>
@@ -67,7 +67,7 @@
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/deterdzent_za_staklo.png">
+                        <img src="./resources/assets/img/products/deterdzent_za_staklo.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Deterdžent za čišćenje staklenih površina</a>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/koncetrat_za_rublje.png">
+                        <img src="./resources/assets/img/products/koncetrat_za_rublje.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Koncentrat za ručno i mašinsko pranje rublja</a>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/koncetrat_za_rucno_pranje_tepiha.png">
+                        <img src="./resources/assets/img/products/koncetrat_za_rucno_pranje_tepiha.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Koncentrat za ručno pranje tepiha</a>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/krema_za_koznu_galanteriju.png">
+                        <img src="./resources/assets/img/products/krema_za_koznu_galanteriju.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Krema za kožnu galanteriju</a>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/omeksivac_za_rublje.png">
+                        <img src="./resources/assets/img/products/omeksivac_za_rublje.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Omekšivač za rublje</a>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/pakovanje_za_kosu.png">
+                        <img src="./resources/assets/img/products/pakovanje_za_kosu.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Pakovanje za kosu</a>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/pasta_za_domacinstvo.png">
+                        <img src="./resources/assets/img/products/pasta_za_domacinstvo.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Pasta za domaćinstvo</a>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/porodicna_krema2.png">
+                        <img src="./resources/assets/img/products/porodicna_krema2.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Porodična krema</a>
@@ -139,7 +139,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/sampon_hmelj_kopriva.png">
+                        <img src="./resources/assets/img/products/sampon_hmelj_kopriva.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Šampon za masnu kosu</a>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/sampon_kopriva.png">
+                        <img src="./resources/assets/img/products/sampon_kopriva.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Šampon za svaki dan</a>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/sampon_protiv_prhuti.png">
+                        <img src="./resources/assets/img/products/sampon_protiv_prhuti.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Šampon protiv peruti</a>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/sanitar_gel.png">
+                        <img src="./resources/assets/img/products/sanitar_gel.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Sanitar gel</a>
@@ -175,7 +175,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/tecni_sapun.png">
+                        <img src="./resources/assets/img/products/tecni_sapun.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Tečni sapun za ruke i telo</a>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/tecni_sapun_antibakterijska.png">
+                        <img src="./resources/assets/img/products/tecni_sapun_antibakterijska.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Antibakterijski tečni sapun</a>
@@ -193,7 +193,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/univarzlni_koncetrat_za_ciscenje.png">
+                        <img src="./resources/assets/img/products/univarzlni_koncetrat_za_ciscenje.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Univerzalni koncentrat za čišćenje</a>
@@ -202,7 +202,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/sampon_za_suvu_kosu.png">
+                        <img src="./resources/assets/img/products/sampon_za_suvu_kosu.png">
                         <button>Više o proizvodu</button>
                     </div>
                     <a>Šampon za suvu kosu</a>

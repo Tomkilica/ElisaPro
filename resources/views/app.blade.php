@@ -15,21 +15,21 @@
             <div class="middle">
                 <div class="user">
                     <div class="login">
-                        <img src="./resources/assets/img/login.png">
+                        <img src="./resources/assets/img/icons/login.png">
                         <a>Prijavi se</a>
                     </div>
                     <div class="regist">
-                        <img src="./resources/assets/img/regis.png">
+                        <img src="./resources/assets/img/icons/regis.png">
                         <a>Novi kupac</a>
                     </div>
                 </div>
                 <div class="img">
-                    <img src="./resources/assets/img/logo2.png">
+                    <img src="./resources/assets/img/icons/logo2.png">
                 </div>
                 <div class="cart">
                     <div class="content">
                         <a>Moja korpa</a>
-                        <img src="./resources/assets/img/cart.png">
+                        <img src="./resources/assets/img/icons/cart.png">
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="box">
                 <div class="address">
                     <div class="first">
-                        <img src="./resources/assets/img/pointer.png">
+                        <img src="./resources/assets/img/icons/pointer.png">
                         <div class="text">
                             <h5>Svetozara Miletića 27a, 26 000 Pančevo, Srbija</h5>
                             <h5>Radno vreme: ponedeljak-petak 8 - 15h</h5>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="second">
-                        <img src="./resources/assets/img/pointer.png">
+                        <img src="./resources/assets/img/icons/pointer.png">
                         <div class="text">
                             <h5>Novi Sad</h5>
                             <h5>Telefon: +381 60 707 71 40</h5>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="mail">
                         <div class="content">
-                            <img src="./resources/assets/img/mail.png">
+                            <img src="./resources/assets/img/icons/mail.png">
                             <a href="mailto:elisa@elisa.rs">elisa@elisa.rs</a>
                         </div>
                     </div>
