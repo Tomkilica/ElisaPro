@@ -30,7 +30,7 @@
     font-size: 13px;
 }
 .regis form input[type="submit"] {
-    width: 30%;
+    width: 150px;
     background: #a0d445;
     color: #fff;
     line-height: 2.5;
@@ -53,4 +53,19 @@
     color: #ff0000;
     float: left;
     font-size: 14px;
+}
+@media(max-width:  1000px) { 
+    .regis form {
+        width: 40%;
+    }
+}
+@media(max-width:  700px) { 
+    .regis form {
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .regis form {
+        width: 65%;
+    }
 }
