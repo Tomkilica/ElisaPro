@@ -7,15 +7,6 @@ body, div, p, h1, h2, h3, h4, h5, h6, nav, ul, li, span, a {
     color: #3f2803;
 
 }
-body, div, p, h1, h2, h3, h4, h5, h6, nav, ul, li, span, a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #3f2803;
-
-}
 h1 {
     font-size: 60px;
     line-height: 40px;
@@ -112,7 +103,7 @@ header nav {
     border-bottom: 1px solid #ebedf0;
 }
 header nav .menu {
-    width: 45%;
+    width: 100%;
     margin: 10px auto;
     display: flex;
     justify-content: center;
@@ -140,4 +131,17 @@ header nav .menu li:hover {
 header nav .menu li:hover a {
     color: #86da27;
     transition: color 0.5s;
+}
+@media(max-width:  678px) { 
+    header nav .menu {
+        width: 75%;
+    }
+    header nav .menu li {
+        text-align: center;
+        margin-left: 15px;
+        padding-right: 10px;
+    }
+    header nav .menu a {
+        padding: 0;  
+    }
 }

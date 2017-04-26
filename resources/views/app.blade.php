@@ -47,7 +47,7 @@
                     <div class="first">
                         <img src="./resources/assets/img/icons/pointer.png">
                         <div class="text">
-                            <h5>Svetozara Miletića 27a, 26 000 Pančevo, Srbija</h5>
+                            <h5>Svetozara Miletića 27a, 26000 Pančevo, Srbija</h5>
                             <h5>Radno vreme: ponedeljak-petak 8 - 15h</h5>
                             <h5>Telefon: +381 64 137 46 42</h5>
                         </div>

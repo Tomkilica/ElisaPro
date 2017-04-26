@@ -1,5 +1,3 @@
-
-
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
@@ -55,7 +53,7 @@
                         <h5>godina iskustva</h5>
                     </div>
                     <div class="counter-el">
-                        <div class="number"><span class="count" count-data="18">0</span></div>
+                        <div class="number"><span class="count" count-data="19">0</span></div>
                         <h5>proizvoda</h5>
                     </div>
                     <div class="counter-el">
@@ -232,7 +230,7 @@
                     <div class="first">
                         <img src="./resources/assets/img/icons/pointer.png">
                         <div class="text">
-                            <h5>Svetozara Miletića 27a, 26 000 Pančevo, Srbija</h5>
+                            <h5>Svetozara Miletića 27a, 26000 Pančevo, Srbija</h5>
                             <h5>Radno vreme: ponedeljak-petak 8 - 15h</h5>
                             <h5>Telefon: +381 64 137 46 42</h5>
                         </div>

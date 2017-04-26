@@ -65,3 +65,68 @@ footer .green-line {
 footer .green-line h6 {
     text-align: center;
 }
+@media(max-width:  1250px) {
+    footer .box {
+        width: 95%;
+    }
+}
+@media(max-width:  1110px) {
+    footer .box .address .first,
+    footer .box .address .second {
+        width: 50%;
+        text-align: center;
+    }
+    footer .box .address .first img, 
+    footer .box .address .second img,
+    footer .box .mail img {
+        float: none;
+    }
+    footer .box .address .first .text, 
+    footer .box .address .second .text {
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer .box .address .first h5, 
+    footer .box .address .second h5 {
+        padding-left: 0;
+        font-size: 15px;
+    }
+    footer .box .mail {
+         width: 100%;
+    }
+    footer .box .mail .content {
+        text-align: center;
+    }
+
+    footer .box .mail .content a {
+        padding-top: 0;
+        padding-left: 0; 
+        text-decoration: none;
+        width: 100%;
+    }
+
+}
+@media(max-width:  768px) {
+
+    footer .box .address .first,
+    footer .box .address .second,
+    footer .box .mail {
+        width: 100%;
+        text-align: center;
+    }
+    footer .box .address .first .text, 
+    footer .box .address .second .text,
+    footer .box .mail img {
+        float: none;
+    }
+    footer .box .address .first h5, 
+    footer .box .address .second h5 {
+        margin-top: 12px;
+    }
+    footer .box .address .second,
+    footer .box .mail {
+        margin-top: 30px;
+    }
+
+}
+

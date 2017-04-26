@@ -91,6 +91,7 @@
     color: #fff;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 600;
 }
 .products .box .img {
     float: left;
@@ -115,7 +116,7 @@
     display: block;
     font-family: "Open Sans";
     transition: color 1s;
-
+    text-align: center;
 }
 .owl-theme .owl-dots .owl-dot span {
     background: #a0d445;
@@ -134,6 +135,7 @@
     font-weight: 600;
     text-transform: uppercase;
     padding-top: 5px;
+    text-align: center;
 }
 .galleria .owl-carousel .item h6:nth-of-type(2) {
     color: #3f2803;
@@ -180,8 +182,77 @@
 .galleria .owl-theme .owl-nav {
     display: none;
 }
+@media(min-width:  1920px) {
+    .about .box {
+        max-width: 1500px;
+    }
+    .counter {
+        height: 500px;
+        overflow: hidden;
+    }
+}
+@media(max-width:  1000px) {  
+    .about {
+        margin: 80px 0;
+    }
+    .about .box .text {
+        width: 100%;
+        float: none;
+    }
+    .products .box .img {
+        margin-bottom: 20px;
+        width: 50%;
+        float: right;
+    }
+    .counter .box { 
+        margin-top: 70px;
+    }
+}
+@media(max-width:  678px) { 
 
-
-
+    .hero {
+        height: 250px;
+    }
+    .hero img {
+        height: 100%;
+    }
+    .about {
+        margin: 80px 0;
+    }
+    .about .box .img img,
+    .about .box .text,
+    .about .box .img {
+        width: 100%;
+    }
+    .about h2 {
+        padding-bottom: 0; 
+    }
+    .about .box .img img {
+        margin-bottom: 30px;
+    }
+    .counter {
+        height: 200px;
+    }
+    .counter .box {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .counter img {
+        height: 100%;
+    }
+    .counter .box .counter-el .number span {
+        font-size: 35px;
+    }
+    .counter .box .counter-el h5 {
+        font-size: 12px;
+    }
+    .counter .box .counter-el {
+        margin-top: 55px;
+    }
+    .galleria .owl-carousel .item a,
+    .galleria .owl-carousel .item h6 {
+        text-align: center;
+    }
+}
 
 
