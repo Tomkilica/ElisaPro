@@ -16,4 +16,8 @@ class ShopController extends Controller
         return view('single');
     }
 
+    public function shop(){
+        return view('shop');
+    }
+
 }

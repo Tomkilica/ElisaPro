@@ -12,8 +12,18 @@
 */
 
 Route::get('/', 'HomeController@home');
+
+
 Route::get('/single', 'ShopController@single');
 
 
 Route::post('/registration', 'RegistrationController@create');
 Route::get('/registration', 'RegistrationController@index');
+
+
+Route::post('/login', 'LoginController@store');
+Route::get('/login', 'LoginController@index');
+
+
+Route::get('/shop', 'ShopController@shop');
+

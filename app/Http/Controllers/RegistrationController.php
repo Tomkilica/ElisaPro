@@ -8,7 +8,7 @@
 
 namespace App\Http\Controllers;
 
-
+use Hash;
 use App\User;
 use Illuminate\Support\Facades\Redirect;
 
@@ -31,14 +31,10 @@ class RegistrationController extends Controller
             'address' => 'required|max:256',
         ]);
 
-       if($validation) {
-           return redirect()->back()->withInput();
+        if($validation) {
+            return redirect()->back()->withInput();
 
-       }
-
-
-
-
+        }
 
         User::create([
             'firstName' => request('firstName'),
@@ -46,7 +42,7 @@ class RegistrationController extends Controller
             'email' => request('email'),
             'tel' => request('tel'),
             'address' => request('address'),
-            'password' => bcrypt(request('password'))]);
+            'password' => Hash::make(request('password'))]);
 
 
         return view('registration');
