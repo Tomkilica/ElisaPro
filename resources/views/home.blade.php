@@ -89,6 +89,15 @@
                 </div>
                 <div class="item">
                     <div class="img">
+                        <img src="./resources/assets/img/products/koncetrat_za_rucno_pranje_posudja.png">
+                        <button>Više o proizvodu</button>
+                    </div>
+                    <a>Koncentrat za ručno pranje posuđa</a>
+                    <h6>čišćenje domaćinstva</h6>
+                    <h6>599,00 din</h6>
+                </div>
+                <div class="item">
+                    <div class="img">
                         <img src="./resources/assets/img/products/koncetrat_za_rublje.png">
                         <button>Više o proizvodu</button>
                     </div>

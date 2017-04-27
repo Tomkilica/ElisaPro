@@ -41,3 +41,134 @@ img {
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
 }
+.portfolioContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+/*.portfolioContainer .kosa,*/
+ /*.portfolioContainer .higijena,*/
+ /*.portfolioContainer .zdravlje,*/
+ /*.portfolioContainer .telo,*/
+ /*.portfolioContainer .domacinstvo{*/
+     /*width: 100%;*/
+     /*display: flex;*/
+     /*justify-content: space-around;*/
+     /*flex-wrap: wrap;*/
+ /*}*/
+.portfolioContainer .item a {
+    font-size: 16px;
+    line-height: 21px;
+    color: #3f2803;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+    display: block;
+    font-family: "Open Sans";
+    transition: color 1s;
+    text-align: center;
+}
+.portfolioContainer .item h6 {
+    font-size: 11px;
+    line-height: 16px;
+    color: #a0d445;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 5px;
+    text-align: center;
+}
+.portfolioContainer .item h6:nth-of-type(2) {
+    color: #3f2803;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-transform: lowercase;
+}
+.portfolioContainer .item a:hover{
+    color: #a0d445;
+    cursor: pointer;
+    transition: color 1s;
+}
+.portfolioContainer .item .img button,
+.portfolioContainer .item .img a {
+    width: 150px;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 1.1;
+    border: 0;
+    outline: 0;
+    left: 50%;
+    position: absolute;
+    cursor: pointer;
+    background: #3f2803;
+    margin-left: -75px;
+    font-family: inherit;
+    color: #fff;
+    transition: background 1s;
+}
+.portfolioContainer .item .img a {
+    height: 28.5px;
+    text-decoration: none;
+    line-height: 0.8;
+    font-weight: normal;
+
+}
+
+.portfolioContainer .item .img button{
+    top: -50px;
+    opacity: 0;
+    transition: top 1s, opacity 0.5s;
+
+}
+
+.portfolioContainer .item .img a{
+    bottom: -50px;
+    opacity: 0;
+    transition: bottom 1s, opacity 0.5s;
+}
+
+.portfolioContainer .domacinstvo,
+.portfolioContainer .zdravlje,
+.portfolioContainer .telo,
+.portfolioContainer .higijena,
+.portfolioContainer .kosa {
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px 0;
+    height: 410px;
+}
+.portfolioContainer .item:hover button{
+    top: 105px;
+    opacity: 1;
+    transition: top 1s, opacity 0.5s 0.2s;
+}
+
+.portfolioContainer .item:hover a{
+    bottom: 200px;
+    opacity: 1;
+    transition: bottom 1s, opacity 0.5s 0.2s;
+}
+.portfolioContainer .item .img button:hover,
+.portfolioContainer .item .img a:hover{
+    background: #a0d445;
+    transition: background 1s;
+}
+.nav {
+    width: 100%;
+    float: left;
+}
+.portfolioFilter {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolioFilter a {
+    font-size: 12px;
+    letter-spacing: 0.8;
+    background-color: #f2f5f8;
+    color: #3f2803;
+    font-weight: normal;
+    padding: 10px;
+    text-transform: uppercase;
+}
