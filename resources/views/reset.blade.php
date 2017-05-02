@@ -19,7 +19,7 @@
         <input type="password" name="password" placeholder="lozinka" required>
         <div class="massage">
             @if($errors->get('password'))
-            <p>Lozinka mora imati minimum 6 karaktera i biti ista kao potvrđena</p>
+                <p>Lozinka mora imati minimum 6 karaktera i biti ista kao potvrđena</p>
             @endif
         </div>
         <input type="password" name="password_confirmation" placeholder="potvrda lozinke" required>

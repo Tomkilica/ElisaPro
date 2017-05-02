@@ -70,7 +70,7 @@ class RegistrationController extends Controller
         return view('forgot_password');
     }
 
-    public function testmail(){
+    public function activationMail(){
         $user = User::findOrFail(7);
         $domain = request()->getHttpHost() . '/elisa/email/' . $user->id . '/activate' ; 
          
