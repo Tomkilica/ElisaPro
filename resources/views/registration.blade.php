@@ -23,7 +23,11 @@
         <input type="email" name="email" placeholder="email adresa" value="{{ old('email') }}" required>
         <div class="massage">
             @if($errors->get('email'))
-                <p>Upisana email adresa mora biti ista kao i potvrđena email adresa</p>
+                @if("The email has already been taken." == $errors->get('email')[0]) 
+                    <p>Korisnik sa ovom email adresom već postoji u bazi.</p>
+                @else 
+                    <p>Upisana email adresa mora biti ista kao i potvrđena email adresa.</p>
+                @endif
             @endif
         </div>
         <input type="email" name="email_confirmation" placeholder="potvrda email adrese" value="" required>
@@ -50,12 +54,7 @@
         </div>
         <input type="submit" value="Registruj se">
     </form>
-
-
-
-
 </section>
-
 </body>
 @endsection
 

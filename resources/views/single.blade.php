@@ -1,8 +1,10 @@
 @extends('app')
+
+@section('content')
     <head>
         <link rel="stylesheet" type="text/css" href="./resources/assets/css/single.css">
+        <script type="text/javascript" src="./resources/assets/js/single.js"></script>
     </head>
-@section('content')
     <body>
         <section class="product">
             <div class="box">

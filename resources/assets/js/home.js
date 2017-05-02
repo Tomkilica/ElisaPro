@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $('.owl-carousel').owlCarousel({
         loop:true,
         autoplay: true,
@@ -18,19 +17,8 @@ $(document).ready(function(){
         }
     });
 
-
-    // function isOnScreen(element)
-    // {
-    //     var elementPos = element[0].offsetTop;
-    //     var screenHeight = $(window).scrollY;
-    //     return (elementPos > screenHeight) ? false : true;
-    //
-    //
-    // }
-    //
     var counted = false;
     $(window).scroll(function() {
-
         var scrollTop = $(this).scrollTop();
         var elementPos = $('#counter')[0].offsetTop - 200;
         if(elementPos < scrollTop && !counted){
@@ -48,21 +36,4 @@ $(document).ready(function(){
             });
         }
     });
-
-
-
-
-
 });
-
-function modify_qty(val) {
-    var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + val;
-
-    if (new_qty < 0) {
-        new_qty = 0;
-    }
-
-    document.getElementById('qty').value = new_qty;
-    return new_qty;
-}

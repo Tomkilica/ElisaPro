@@ -70,8 +70,12 @@ header .middle .cart {
 header .middle .cart .content {
     float: right;
 }
-
-header .middle a {
+header .middle .user_name {
+    width: 100%;
+    float: left;
+}
+header .middle a,
+header .middle .user_name p {
     text-transform: uppercase;
     padding: 0 15px;
     color: #adadad;
@@ -85,6 +89,15 @@ header .middle a {
     font-family: "Open Sans";
 
 }
+header .middle .user_name p,
+header .middle .user_name img { 
+    float: right;
+}
+header .middle .user_name p {
+    margin-top: 25px;
+    cursor: context-menu;
+}
+
 header .middle a:hover,
 header .middle a:focus{
     color: #86da27;

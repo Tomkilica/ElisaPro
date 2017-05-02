@@ -17,13 +17,13 @@
             <div class="top"></div>
             <div class="middle">
                 <div class="img">
-                    <img src="./resources/assets/img/icons/logo2.png">
+                    <img src="./resources/assets/img/icons/logo.png">
                 </div>
             </div>
             <nav>
                 <ul class="menu">
                     <li><a href="{{url('/')}}">Naslovna</a></li>
-                    <li><a href="{{url('/')}}">Internet Prodavnica</a></li>
+                    <li><a href="{{url('/shop')}}">Internet Prodavnica</a></li>
                 </ul>
             </nav>
         </header>

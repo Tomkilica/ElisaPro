@@ -4,7 +4,7 @@
 
 <html>
     <head>
-        <title>jQuery Isotope</title>
+        <title>Elisa Prodavnica</title>
         <link rel="stylesheet" href="./resources/assets/css/shop.css">
         <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
         <script src="./resources/assets/js/shop/jquery.isotope.js" type="text/javascript"></script>

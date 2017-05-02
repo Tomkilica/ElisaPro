@@ -16,6 +16,7 @@
             </div>
 
             <input type="submit" value="Prijavi se">
+            <a class="forgot_pass" href="{{url('/forgot')}}">Zaboravili ste lozinku?</a>
         </form>
     </section>
     </body>
