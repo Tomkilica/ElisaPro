@@ -1,10 +1,15 @@
 @extends ('app')
 @section('content')
     <head>
-        <link rel="stylesheet" type="text/css" href="./resources/assets/css/registration.css"">
+        <link rel="stylesheet" type="text/css" href="{{ url('/resources/assets/css/registration.css')}}"">
     </head>
     <body>
     <section class="regis">
+        <div class="successful">
+            <div class="box">
+                <h2>{{$succes}}</h2>
+            </div>
+        </div>
         <form method="POST" action="login">
             {{ csrf_field() }}
             <input type="email" name="email" placeholder="email adresa" value="{{ old('email') }}" required>

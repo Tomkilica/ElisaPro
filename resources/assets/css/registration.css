@@ -1,7 +1,7 @@
 .regis {
     width: 100%;
     float: left;
-    margin: 50px 0;
+    margin: 50px 0 100px;
     min-height: 180px;
 }
 .regis form {
@@ -64,6 +64,10 @@
     margin: 80px auto;
     width: 645px;
     text-align: center;
+}
+.regis .successful .box {
+    margin: 0 auto;
+    height: 66px;
 }
 .successful .box h2 {
     font-weight: 600;
