@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>Elisa Prodavnica</title>
-        <link rel="stylesheet" href="./resources/assets/css/shop.css">
+        <link rel="stylesheet" href={{ url('/resources/assets/css/shop.css')}}>
         <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
         <script src="./resources/assets/js/shop/jquery.isotope.js" type="text/javascript"></script>
     </head>
@@ -27,7 +27,7 @@
         <div class="kosa">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/pakovanje_za_kosu.png">
+                    <img src={{ url('/resources/assets/img/products/pakovanje_za_kosu.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -39,7 +39,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/koncetrat_za_rucno_pranje_posudja.png">
+                    <img src={{ url('/resources/assets/img/products/koncetrat_za_rucno_pranje_posudja.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -51,7 +51,7 @@
         <div class=" higijena">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/tecni_sapun_antibakterijska.png">
+                    <img src={{ url('/resources/assets/img/products/tecni_sapun_antibakterijska.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -63,7 +63,7 @@
         <div class="kosa">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/sampon_za_suvu_kosu.png">
+                    <img src={{ url('/resources/assets/img/products/sampon_za_suvu_kosu.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -76,7 +76,7 @@
         <div class="telo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/porodicna_krema2.png">
+                    <img src={{ url('/resources/assets/img/products/porodicna_krema.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -88,7 +88,7 @@
         <div class="zdravlje">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/tecni_sapun.png">
+                    <img src={{ url('/resources/assets/img/products/tecni_sapun.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -100,7 +100,7 @@
         <div class="kosa">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/sampon_hmelj_kopriva.png">
+                    <img src={{ url('/resources/assets/img/products/sampon_hmelj_kopriva.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -112,7 +112,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/koncetrat_za_rublje.png" alt="image">
+                    <img src={{ url('/resources/assets/img/products/koncetrat_za_rublje.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -124,7 +124,7 @@
         <div class="higijena">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/tecni_sapun.png">
+                    <img src={{ url('/resources/assets/img/products/tecni_sapun.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -137,7 +137,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/pasta_za_domacinstvo.png">
+                    <img src={{ url('/resources/assets/img/products/pasta_za_domacinstvo.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -149,7 +149,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/deterdzent_za_staklo.png" alt="image">
+                    <img src={{ url('/resources/assets/img/products/deterdzent_za_staklo.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -161,7 +161,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/sanitar_gel.png">
+                    <img src={{ url('/resources/assets/img/products/sanitar_gel.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -173,7 +173,7 @@
         <div class="kosa">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/sampon_kopriva.png">
+                    <img src={{ url('/resources/assets/img/products/sampon_kopriva.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -185,7 +185,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/omeksivac_za_rublje.png">
+                    <img src={{ url('/resources/assets/img/products/omeksivac_za_rublje.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -197,7 +197,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/univarzlni_koncetrat_za_ciscenje.png">
+                    <img src={{ url('/resources/assets/img/products/univarzlni_koncetrat_za_ciscenje.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -209,7 +209,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/koncetrat_za_rucno_pranje_tepiha.png">
+                    <img src={{ url('/resources/assets/img/products/koncetrat_za_rucno_pranje_tepiha.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                     <a>Dodaj u korpu</a>
@@ -222,7 +222,7 @@
         <div class="kosa">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/sampon_protiv_prhuti.png">
+                    <img src={{ url('/resources/assets/img/products/sampon_protiv_prhuti.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>
@@ -234,7 +234,7 @@
         <div class="domacinstvo">
             <div class="item">
                 <div class="img">
-                    <img src="./resources/assets/img/products/krema_za_koznu_galanteriju.png">
+                    <img src={{ url('/resources/assets/img/products/krema_za_koznu_galanteriju.png')}}>
                     <button>Više o proizvodu</button>
                     <a>Dodaj u korpu</a>
                 </div>

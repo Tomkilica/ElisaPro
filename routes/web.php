@@ -19,7 +19,7 @@ Auth::routes();
 Route::get('/testmail', 'RegistrationController@testmail');
 
 
-Route::get('/single', 'ShopController@single');
+Route::get('/single/{id}', 'ShopController@single');
 Route::get('/shop', 'ShopController@shop');
 
 Route::get('/registration', 'RegistrationController@index');
@@ -39,3 +39,4 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
     Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 });
+

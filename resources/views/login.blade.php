@@ -1,7 +1,7 @@
 @extends ('app')
 @section('content')
     <head>
-        <link rel="stylesheet" type="text/css" href="./resources/assets/css/registration.css"">
+        <link rel="stylesheet" type="text/css" href={{ url('/resources/assets/css/registration.css')}}>
     </head>
     <body>
     <section class="regis">

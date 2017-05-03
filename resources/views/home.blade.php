@@ -3,21 +3,21 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
         <link rel="stylesheet" roperty="stylesheet" id="tp-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.6.4" type="text/css" media="all">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./resources/assets/css/header.css">
-        <link rel="stylesheet" type="text/css" href="./resources/assets/css/footer.css">
-        <link rel="stylesheet" type="text/css" href="./resources/assets/css/owl.carousel.css">
-        <link type="text/css" rel="stylesheet" href="./resources/assets/css/home.css">        
-        <script type="text/javascript" src="./resources/assets/js/jQueryV3.1.1.js"></script>
-        <script type="text/javascript" src="./resources/assets/js/bootstrapV3.3.7.js"></script>
-        <script type="text/javascript" src="./resources/assets/js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="./resources/assets/js/home.js"></script>
+        <link rel="stylesheet" type="text/css" href={{ url('/resources/assets/css/header.css')}}>
+        <link rel="stylesheet" type="text/css" href={{ url('/resources/assets/css/footer.css')}}>
+        <link rel="stylesheet" type="text/css" href={{ url('/resources/assets/css/owl.carousel.css')}}>
+        <link type="text/css" rel="stylesheet" href={{ url('/resources/assets/css/home.css')}}>
+        <script type="text/javascript" src={{ url('/resources/assets/js/jQueryV3.1.1.js')}}></script>
+        <script type="text/javascript" src={{ url('/resources/assets/js/bootstrapV3.3.7.js')}}></script>
+        <script type="text/javascript" src={{ url('/resources/assets/js/owl.carousel.min.js')}}></script>
+        <script type="text/javascript" src={{ url('/resources/assets/js/home.js')}}></script>
     </head>
     <body>
         <header>
             <div class="top"></div>
             <div class="middle">
                 <div class="img">
-                    <img src="./resources/assets/img/icons/logo.png">
+                    <img src={{ url('/resources/assets/img/icons/logo.png')}}>
                 </div>
             </div>
             <nav>
@@ -29,12 +29,12 @@
         </header>
         <section class="hero">
             <div class="opacity"></div>
-            <img src="./resources/assets/img/home/3.jpg">
+            <img src={{ url('/resources/assets/img/home/3.jpg')}}>
         </section>
         <section class="about">
             <div class="box">
                 <div class="img">
-                    <img src="./resources/assets/img/home/7.jpg">
+                    <img src={{ url('/resources/assets/img/home/7.jpg')}}>
                 </div>
                 <div class="text">
                     <h2>O nama</h2>
@@ -45,7 +45,7 @@
         </section>
         <section id="counter" class="counter">
             <div class="opacity"></div>
-            <img src="./resources/assets/img/home/5.png">
+            <img src={{ url('/resources/assets/img/home/5.png')}}>
             <div class="counter-content">
                 <div class="box">
                     <div class="counter-el">
@@ -66,7 +66,7 @@
         <section class="about products">
             <div class="box">
                 <div class="img">
-                    <img src="./resources/assets/img/home/6.jpg">
+                    <img src="{{ url('/resources/assets/img/home/6.jpg')}}">
                 </div>
                 <div class="text">
                     <h2>O proizvodima</h2>
@@ -80,8 +80,8 @@
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/deterdzent_za_staklo.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/deterdzent_za_staklo.png')}}>
+                        <button><a href={{ url('/single/5')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Deterdžent za čišćenje staklenih površina</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -89,8 +89,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/koncetrat_za_rucno_pranje_posudja.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/koncetrat_za_rucno_pranje_posudja.png')}}>
+                        <button><a href={{ url('/single/3')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Koncentrat za ručno pranje posuđa</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -98,8 +98,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/koncetrat_za_rublje.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/koncetrat_za_rublje.png')}}>
+                        <button><a href={{ url('/single/2')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Koncentrat za ručno i mašinsko pranje rublja</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -107,8 +107,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/koncetrat_za_rucno_pranje_tepiha.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/koncetrat_za_rucno_pranje_tepiha.png')}}>
+                        <button><a href={{ url('/single/8')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Koncentrat za ručno pranje tepiha</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -116,8 +116,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/krema_za_koznu_galanteriju.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/krema_za_koznu_galanteriju.png')}}>
+                        <button><a href={{ url('/single/9')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Krema za kožnu galanteriju</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -125,8 +125,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/omeksivac_za_rublje.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/omeksivac_za_rublje.png')}}>
+                        <button><a href={{ url('/single/1')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Omekšivač za rublje</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -134,8 +134,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/pakovanje_za_kosu.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/pakovanje_za_kosu.png')}}>
+                        <button><a href={{ url('/single/10')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Pakovanje za kosu</a>
                     <h6>nega kose</h6>
@@ -143,8 +143,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/pasta_za_domacinstvo.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/pasta_za_domacinstvo.png')}}>
+                        <button><a href={{ url('/single/4')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Pasta za domaćinstvo</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -152,8 +152,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/porodicna_krema2.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/porodicna_krema.png')}}>
+                        <button><a href={{ url('/single/17')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Porodična krema</a>
                     <h6>nega tela</h6>
@@ -161,8 +161,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/sampon_hmelj_kopriva.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/sampon_hmelj_kopriva.png')}}>
+                        <button><a href={{ url('/single/12')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Šampon za masnu kosu</a>
                     <h6>nega kose</h6>
@@ -170,8 +170,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/sampon_kopriva.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/sampon_kopriva.png')}}>
+                        <button><a href={{ url('/single/13')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Šampon za svaki dan</a>
                     <h6>nega kose</h6>
@@ -179,8 +179,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/sampon_protiv_prhuti.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/sampon_protiv_prhuti.png')}}>
+                        <button><a href={{ url('/single/14')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Šampon protiv peruti</a>
                     <h6>nega kose</h6>
@@ -188,8 +188,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/sanitar_gel.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/sanitar_gel.png')}}>
+                        <button><a href={{ url('/single/6')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Sanitar gel</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -197,8 +197,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/tecni_sapun.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/tecni_sapun.png')}}>
+                        <button><a href={{ url('/single/15')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Tečni sapun za ruke i telo</a>
                     <h6>lična higijena</h6>
@@ -206,8 +206,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/tecni_sapun_antibakterijska.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/tecni_sapun_antibakterijska.png')}}>
+                        <button><a href={{ url('/single/16')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Antibakterijski tečni sapun</a>
                     <h6>lična higijena</h6>
@@ -215,8 +215,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/univarzlni_koncetrat_za_ciscenje.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/univarzlni_koncetrat_za_ciscenje.png')}}>
+                        <button><a href={{ url('/single/7')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Univerzalni koncentrat za čišćenje</a>
                     <h6>čišćenje domaćinstva</h6>
@@ -224,8 +224,8 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="./resources/assets/img/products/sampon_za_suvu_kosu.png">
-                        <button>Više o proizvodu</button>
+                        <img src={{ url('/resources/assets/img/products/sampon_za_suvu_kosu.png')}}>
+                        <button><a href={{ url('/single/11')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Šampon za suvu kosu</a>
                     <h6>nega kose</h6>
@@ -237,7 +237,7 @@
             <div class="box">
                 <div class="address">
                     <div class="first">
-                        <img src="./resources/assets/img/icons/pointer.png">
+                        <img src={{ url('/resources/assets/img/icons/pointer.png')}}>
                         <div class="text">
                             <h5>Svetozara Miletića 27a, 26000 Pančevo, Srbija</h5>
                             <h5>Radno vreme: ponedeljak-petak 8 - 15h</h5>
@@ -245,7 +245,7 @@
                         </div>
                     </div>
                     <div class="second">
-                        <img src="./resources/assets/img/icons/pointer.png">
+                        <img src={{ url('/resources/assets/img/icons/pointer.png')}}>
                         <div class="text">
                             <h5>Novi Sad</h5>
                             <h5>Telefon: +381 60 707 71 40</h5>
@@ -253,7 +253,7 @@
                     </div>
                     <div class="mail">
                         <div class="content">
-                            <img src="./resources/assets/img/icons/mail.png">
+                            <img src={{ url('/resources/assets/img/icons/mail.png')}}>
                             <a href="mailto:elisa@elisa.rs">elisa@elisa.rs</a>
                         </div>
                     </div>
