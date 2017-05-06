@@ -3,8 +3,10 @@
     <meta charset="text/html">
 </head>
 <body>
-    Subject: {{$title}}
-    Message body:
-    <a href="{{$link}}">{{$body}}</a>
+    <p class="title">{{$title}}</p>
+	
+	<p class="msg">{{$msg}}</p>
+
+    <a href="{{$link}}" target="_blank">{{$btn}}</a>
 </body>
 </html>

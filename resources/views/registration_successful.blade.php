@@ -8,8 +8,8 @@
 <body>
     <div class="successful">
         <div class="box">
-            <h2>Uspesno ste izvrsili registraciju!!!</h2>
-            <h3>Molimo vas da potvrdite aktivaciju nalog odlaskom na link koji ce vam uskoro biti poslat na vasu email adresu.</h3>
+            <h2>Uspešno ste izvršili registraciju!!!</h2>
+            <h3>Molimo Vas da potvrdite aktivaciju naloga odlaskom na link koji će Vam uskoro biti poslat na vašu email adresu.</h3>
         </div>
     </div>
 </body>

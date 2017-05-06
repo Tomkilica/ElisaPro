@@ -28,7 +28,7 @@ class LoginUserController extends Controller
     }
 
     public function index(){
-        return view('login');
+        return view('login')->with(['succes' => ""]);;
     }
 
     public function store(){
@@ -52,10 +52,14 @@ class LoginUserController extends Controller
         return redirect('/login'); 
     } 
 
-    public function activate_email($id) {
+    public function activateEmail($id) {
         $user = User::find($id);
-        $user->activated = true;
-        $user->save();
-        return redirect('/login'); 
+        if(!$user->activated) {
+            $user->activated = true;
+            $user->save();
+            return view('login')->with(['succes' => "Uspešno ste aktivirali naloga!!!"]);
+        } else {
+            return redirect('/login');
+        }
     } 
 }

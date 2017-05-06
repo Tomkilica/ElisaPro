@@ -53,7 +53,7 @@ class RegistrationController extends Controller
 
         }
 
-        User::create([
+        $user = User::create([
             'firstName' => request('firstName'),
             'lastName' => request('lastName'),
             'email' => request('email'),
@@ -61,7 +61,8 @@ class RegistrationController extends Controller
             'address' => request('address'),
             'password' => bcrypt(request('password'))]);
 
-
+        $this->sendActivationMail($user);
+        
         return view('registration_successful');
     }
 
@@ -70,14 +71,12 @@ class RegistrationController extends Controller
         return view('forgot_password');
     }
 
-    public function activationMail(){
-        $user = User::findOrFail(7);
-        $domain = request()->getHttpHost() . '/elisa/email/' . $user->id . '/activate' ; 
-         
-        Mail::send('empty', array('body' => 'Aktivacija Emaila', 'title'=>'BL BLA BLA', 'link' => $domain), function ($m) use ($user) {
-            $m->from('hello@app.com', 'Your Application');
+    public function sendActivationMail(User $userParam){
+        $domain = "http://" . request()->getHttpHost() . '/elisa/email/' . $userParam->id . '/activate' ; 
 
-            $m->to($user->email, $user->name)->subject('Activate mail za Elisa prodavnicu!');
+        Mail::send('empty', array('title' => 'Aktivacija Naloga', 'msg'=>'Poštovani/a da bi ste aktivirali vaš nalog potrebno je da kliknete na link ispod', 'link' => $domain, 'btn'=>'Aktivacija naloga'), function ($m) use ($userParam) {
+            $m->from('elisa@elisa.rs', 'Elisa info');
+            $m->to($userParam->email, $userParam->firstName)->subject('Aktivacija naloga za Elisu prodavnicu!');
         });
 
     }
