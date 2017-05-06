@@ -87,6 +87,7 @@ img {
     color: #a0d445;
     cursor: pointer;
     transition: color 1s;
+    text-decoration: none;
 }
 .portfolioContainer .item .img button,
 .portfolioContainer .item .img a {
@@ -108,19 +109,19 @@ img {
 .portfolioContainer .item .img a {
     height: 28.5px;
     text-decoration: none;
-    line-height: 0.8;
+    line-height: 0.5;
     font-weight: normal;
 
 }
 
-.portfolioContainer .item .img button{
+.portfolioContainer .item .img .up{
     top: -50px;
     opacity: 0;
     transition: top 1s, opacity 0.5s;
-
 }
 
-.portfolioContainer .item .img a{
+
+.portfolioContainer .item .img .down{
     bottom: -50px;
     opacity: 0;
     transition: bottom 1s, opacity 0.5s;
@@ -136,13 +137,13 @@ img {
     margin: 20px 0;
     height: 410px;
 }
-.portfolioContainer .item:hover button{
+.portfolioContainer .item:hover .up{
     top: 105px;
     opacity: 1;
     transition: top 1s, opacity 0.5s 0.2s;
 }
 
-.portfolioContainer .item:hover a{
+.portfolioContainer .item:hover .down {
     bottom: 200px;
     opacity: 1;
     transition: bottom 1s, opacity 0.5s 0.2s;

@@ -1,0 +1,48 @@
+.cart {
+    width: 100%;
+    float: left;
+    margin: 100px 0;
+}
+.cart .box {
+    width: 80%;
+    margin: 0 auto;
+}
+.cart .box .content {
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    padding: 60px 0;
+
+}
+
+.cart .box .content .img img {
+    width: 60%;
+}
+.cart .box .content table {
+    width: 100%;
+}
+.cart .box .content table thead {
+    border-bottom: 1px solid #ebedf0;
+
+}
+
+.cart .box .content table thead th {
+    width: 25%;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #adadad;
+    font-weight: normal;
+
+}
+.cart .box .content table  td {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ebedf0;
+}
+
+.cart .box .content table  td h4 {
+    font-weight: normal;
+
+
+}

@@ -32,6 +32,9 @@ Route::get('/logout', 'LoginUserController@destroy');
 Route::get('/email/{id}/activate', 'LoginUserController@activate_email');
 
 
+Route::get('/cart', 'CartController@show');
+
+
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 	Route::get('password/reset/{token}', 'Auth\ResetsPasswords@showResetForm');
