@@ -20,6 +20,10 @@
     border: 2px solid #3f2803;
     letter-spacing: 1.5;
 }
+.regis form input:nth-child(2) {
+    margin-top: 40px;
+}
+
 .regis form input:focus {
     border-color: #a0d445;
     outline: none;

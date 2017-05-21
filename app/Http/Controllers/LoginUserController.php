@@ -9,7 +9,9 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Session;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Auth;
@@ -28,7 +30,7 @@ class LoginUserController extends Controller
     }
 
     public function index(){
-        return view('login')->with(['succes' => ""]);;
+        return view('login')->with(['msg' => Session::get('msg')]);
     }
 
     public function store(){
@@ -57,7 +59,7 @@ class LoginUserController extends Controller
         if(!$user->activated) {
             $user->activated = true;
             $user->save();
-            return view('login')->with(['succes' => "Uspešno ste aktivirali naloga!!!"]);
+            return redirect('login')->with(['msg' => "Uspešno ste aktivirali naloga!!!"]);
         } else {
             return redirect('/login');
         }

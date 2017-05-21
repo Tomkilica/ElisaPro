@@ -46,9 +46,15 @@
                 <p>Polje mora biti popunjeno</p>
             @endif
         </div>
-        <input type="text" name="address" placeholder="adresa dostave" value="{{ old('address') }}" required>
+        <input type="text" name="address" placeholder="Ulica, broj i mesto dostave" value="{{ old('address') }}" required>
         <div class="massage">
             @if($errors->get('address'))
+                <p>Polje mora biti popunjeno</p>
+            @endif
+        </div>
+        <input type="text" name="zip" placeholder="poštanski broj" value="{{ old('zip') }}" required>
+        <div class="massage">
+            @if($errors->get('zip'))
                 <p>Polje mora biti popunjeno</p>
             @endif
         </div>

@@ -5,6 +5,11 @@
     </head>
     <body>
     <section class="regis">
+        <div class="successful">
+            <div class="box">
+                <h3><?= $msg ?></h3>
+            </div>
+        </div>
         <form method="POST" action="login">
             {{ csrf_field() }}
             <input type="email" name="email" placeholder="email adresa" value="{{ old('email') }}" required>

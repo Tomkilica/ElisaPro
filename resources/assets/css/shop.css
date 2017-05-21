@@ -9,7 +9,9 @@ body {
 }
 
 .portfolioFilter a.current {
-    font-weight:bold;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 2px solid #a0d445;
 }
 
 img {
@@ -42,20 +44,12 @@ img {
     transition-property: transform, opacity;
 }
 .portfolioContainer {
-    width: 90%;
+    width: 1240px;
     margin: 0 auto;
 }
-/*.portfolioContainer .kosa,*/
- /*.portfolioContainer .higijena,*/
- /*.portfolioContainer .zdravlje,*/
- /*.portfolioContainer .telo,*/
- /*.portfolioContainer .domacinstvo{*/
-     /*width: 100%;*/
-     /*display: flex;*/
-     /*justify-content: space-around;*/
-     /*flex-wrap: wrap;*/
- /*}*/
 .portfolioContainer .item a {
+    width: 66%;
+    margin: 0 auto;
     font-size: 16px;
     line-height: 21px;
     color: #3f2803;
@@ -136,6 +130,7 @@ img {
     cursor: pointer;
     margin: 20px 0;
     height: 410px;
+    width: 310px;
 }
 .portfolioContainer .item:hover .up{
     top: 105px;
@@ -158,18 +153,80 @@ img {
     float: left;
 }
 .portfolioFilter {
-    width: 60%;
+    width: 70%;
     margin: 50px auto;
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid #ddd;
 }
 
 .portfolioFilter a {
     font-size: 12px;
     letter-spacing: 0.8;
-    background-color: #f2f5f8;
     color: #3f2803;
     font-weight: normal;
     padding: 10px;
     text-transform: uppercase;
 }
+@media  (max-width: 1250px){
+    .portfolioContainer {
+        width: 930px;
+    }
+
+}
+@media (max-width: 1200px) {
+    .nav .portfolioFilter {
+        width: 90%;
+    }
+}
+@media (max-width: 1000px){
+    .portfolioContainer {
+        width: 620px;
+    }
+}
+@media (max-width: 920px) {
+    .nav .portfolioFilter {
+        width: 100%;
+    }
+}
+@media (max-width: 830px) {
+    .nav .portfolioFilter a{
+        font-size: 10px;
+        padding: 6px;
+    }
+}
+@media  (max-width: 680px){
+    .nav .portfolioFilter {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-bottom: none;
+    }
+    .nav .portfolioFilter a {
+        margin-top: 10px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 630px){
+    .portfolioContainer {
+        width: 310px;
+    }
+}
+@media  (max-width: 530px){
+    .nav .portfolioFilter {
+        width: 90%;
+    }
+    .nav .portfolioFilter a{
+        font-size: 9px;
+    }
+}
+@media (max-width: 365px) {
+    .nav .portfolioFilter {
+        width: 100%;
+    }
+    .nav .portfolioFilter a{
+        font-size: 8px;
+    }
+}
+

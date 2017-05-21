@@ -1,6 +1,7 @@
 <!doctype>
 <html>
     <head>
+
         <link rel="stylesheet" roperty="stylesheet" id="tp-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.6.4" type="text/css" media="all">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ url('/resources/assets/fonts/font-awesome/css/font-awesome.min.css')}}">
@@ -36,12 +37,12 @@
                 <div class="cart">
                     @if(Auth::check())
                         <div class="user_name">
+                            <a>{{Auth::user()->firstName}}  {{Auth::user()->lastName}}</a>
                             <img src="{{ url('/resources/assets/img/icons/login.png')}}">
-                            <p>{{Auth::user()->firstName}}  {{Auth::user()->lastName}}</p>
                         </div>
                     @endif
                     <div class="content">
-                        <a>Moja korpa</a>
+                        <a href="{{url('/cart')}}">Moja korpa</a>
                         <img src="{{ url('/resources/assets/img/icons/cart.png')}}">
                     </div>
                 </div>

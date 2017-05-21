@@ -161,7 +161,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src={{ url('/resources/assets/img/products/sampon_hmelj_kopriva.png')}}>
+                        <img src={{ url('/resources/assets/img/products/sampon_za_masnu_kosu.png')}}>
                         <button><a href={{ url('/single/12')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Šampon za masnu kosu</a>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src={{ url('/resources/assets/img/products/sampon_protiv_prhuti.png')}}>
+                        <img src={{ url('/resources/assets/img/products/sampon_protiv_peruti.png')}}>
                         <button><a href={{ url('/single/14')}}>Više o proizvodu</a></button>
                     </div>
                     <a>Šampon protiv peruti</a>

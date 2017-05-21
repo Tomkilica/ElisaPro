@@ -46,6 +46,7 @@ class RegistrationController extends Controller
             'password' => 'required|min:6|max:64|confirmed',
             'tel' => 'required|max:19',
             'address' => 'required|max:256',
+            'zip' => 'required|max:255'
         ]);
 
         if($validation) {
@@ -59,6 +60,7 @@ class RegistrationController extends Controller
             'email' => request('email'),
             'tel' => request('tel'),
             'address' => request('address'),
+            'zip' => request('zip'),
             'password' => bcrypt(request('password'))]);
 
         $this->sendActivationMail($user);

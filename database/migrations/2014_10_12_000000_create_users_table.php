@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('email', 128)->unique();
             $table->bigInteger('tel');
             $table->string('address', 255);
+            $table->string('zip', 255);
             $table->string('password');
             $table->boolean('activated')->default(false);
             $table->rememberToken();

@@ -3,43 +3,43 @@
 @section('content')
     <head>
         <link rel="stylesheet" type="text/css" href={{url('/resources/assets/css/cart.css')}}>
+        <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src={{ url('/resources/assets/js/jquery.cookie.js')}}></script>
+
+        <script type="text/javascript" src={{ url('/resources/assets/js/cart.js')}}></script>
+
 
     </head>
     <body>
     <section class="cart">
         <div class="box">
             <h2>Vaša Korpa</h2>
-            <div class="content">
-                <table>
+            <div class="cartContent">
+                <table class="table">
                     <thead>
                         <th>Proizvod</th>
                         <th></th>
-                        <th>Količina</th>
                         <th>Cena</th>
+                        <th>Količina</th>
+                        <th>Ukupno</th>
                     </thead>
-                    <tr>
-                        <td>
-                            <div class="img">
-                                <img src={{url('/resources/assets/img/products/deterdzent_za_staklo.png')}}>
-                            </div>
-                        </td>
-                        <td>
-                            <h4>Deterdzent za staklo</h4>
-                        </td>
-                        <td>
-                            <h4>1 kom</h4>
-                        </td>
-                        <td>
-                            <h4>299,00 din</h4>
-                        </td>
 
-                    </tr>
                 </table>
-
+                <div class="send">
+                    <div id="subtotal"></div>
+                    <button id="accept">Prihvati</button>
+                </div>
 
             </div>
         </div>
     </section>
+
+
+
+    <div id="test"></div>
+
+
     </body>
 
     @endsection

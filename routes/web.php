@@ -36,6 +36,12 @@ Route::get('/cart', 'CartController@show');
 Route::get('/logout', 'LoginUserController@destroy');
 Route::get('/email/{id}/activate', 'LoginUserController@activateEmail');
 
+Route::get('/credentials', 'CredentialsController@show');
+Route::post('/credentials', 'CredentialsController@create');
+
+
+
+
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 	Route::get('password/reset/{token}', 'Auth\ResetsPasswords@showResetForm');
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');

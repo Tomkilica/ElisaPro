@@ -1,8 +1,7 @@
 .product {
     width: 100%;
     float: left;
-    height: 700px;
-    margin: 100px 0 80px;
+    margin: 50px 0 50px;
 }
 .product .box {
     width: 80%;
@@ -19,6 +18,13 @@
 .product .box .content .text {
     width: 80%;
     margin: 0 auto;
+}
+.product .box .content .text h4:nth-of-type(2){
+    font-weight: normal;
+}
+
+.product .box .content .text .none {
+    display: none;
 }
 .product .box .img img {
     width: 100%;
@@ -94,6 +100,68 @@
     background-color: transparent;
     color: #a0d445;
     transition: color 1s;
+}
+
+@media (max-width: 1300px) {
+    .product .box {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 900px){
+    .product {
+        margin: 0;
+    }
+    .product .box .img {
+        width: 450px;
+        float: none;
+        margin: 50px auto;
+    }
+    .product .box .img img {
+        width: 400px;
+    }
+    .product .box .content {
+        width: 95%;
+        float: none;
+        margin: 0 auto;
+    }
+
+}
+@media (max-width: 550px) {
+    .product .box .content button:last-child {
+        width: 150px;
+        font-size: 14px;
+    }
+    .product .box .content .table {
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .product .box .img {
+        width: 300px;
+    }
+    .product .box .img img {
+        width: 250px;
+    }
+}
+@media (max-width: 415px) {
+    .product .box .content button:last-child {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .product .box .content .text {
+        width: 95%;
+    }
+    .product .box .content .qty {
+        width: 60%;
+    }
+    .nav-tabs>li>a {
+        margin-right: 0;
+        padding: 10px 12px;
+    }
+
 }
 
 
