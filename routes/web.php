@@ -16,9 +16,6 @@ Route::get('/home', 'HomeController@home');
 
 Auth::routes();
 
-Route::get('/testmail', 'RegistrationController@testmail');
-
-
 Route::get('/single/{id}', 'ShopController@single');
 Route::get('/shop', 'ShopController@shop');
 
@@ -28,19 +25,14 @@ Route::get('/forgot', 'RegistrationController@forgotPasswordShow');
 
 Route::post('/login', 'LoginUserController@store');
 Route::get('/login', 'LoginUserController@index');
-// Route::get('/activate/login', 'LoginUserController@indexSucces');
 
 Route::get('/cart', 'CartController@show');
-
 
 Route::get('/logout', 'LoginUserController@destroy');
 Route::get('/email/{id}/activate', 'LoginUserController@activateEmail');
 
 Route::get('/credentials', 'CredentialsController@show');
 Route::post('/credentials', 'CredentialsController@create');
-
-
-
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 	Route::get('password/reset/{token}', 'Auth\ResetsPasswords@showResetForm');

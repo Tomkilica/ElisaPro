@@ -15,22 +15,21 @@
                 <li class="active"><a data-toggle="tab" href="#home">Adresa dostave</a></li>
                 <li><a data-toggle="tab" href="#menu1">Druga adresa</a></li>
             </ul>
-
-            <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                    <div class="form" >
-                        <div class="wrapper">
-                            <p><span>Ime:</span> {{ $userView}}</p>
-                            <p><span>Prezime:</span> {{ $lastNameView}}</p>
-                            <p><span>Adresa:</span> {{ $addressView}}</p>
-                            <p><span>Poštanski broj:</span> {{ $userView}}</p>
-                            <p><span>Telefon:</span> {{ $telView}}</p>
+            <form method="POST"  enctype="multipart/form-data">
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <div class="form" >
+                            <div class="wrapper">
+                                <p><span>Ime:</span> {{ $userView}}</p>
+                                <p><span>Prezime:</span> {{ $lastNameView}}</p>
+                                <p><span>Adresa:</span> {{ $addressView}}</p>
+                                <p><span>Poštanski broj:</span> {{ $userView}}</p>
+                                <p><span>Telefon:</span> {{ $telView}}</p>
+                            </div>
+                            <input id="submit_user" type="submit" value="Potvrdi">
                         </div>
-                        <input  type="submit" value="Potvrdi">
                     </div>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <form method="POST"  id="newAddress" enctype="multipart/form-data">
+                    <div id="menu1" class="tab-pane fade">
                         {{ csrf_field() }}
                         <input type="text" name="firstName" placeholder="ime kupca" value="{{ old('firstName') }}" required>
                         <div class="massage">
@@ -62,14 +61,10 @@
                                 <p>Polje mora biti popunjeno</p>
                             @endif
                         </div>
-
                         <input id="submit" type="submit" value="Potvrdi">
-
-                    </form>
+                    </div>
                 </div>
-
-        </div>
+            </form>
     </section>
-
     </body>
     @endsection

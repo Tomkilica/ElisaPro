@@ -1,6 +1,12 @@
-<?php namespace App\Http\Controllers;
+<?php
+
+namespace App\Http\Controllers;
+
+
+use App\Products;
 
 class HomeController extends Controller {
+
 
 	/*
 	|--------------------------------------------------------------------------
@@ -13,7 +19,9 @@ class HomeController extends Controller {
 	|
 	*/
 
-
+	  public function __construct(Products $products){
+	    	$this->products = $products;
+	  } 
 
 	/**
 	 * Show the application dashboard to the user.
@@ -22,10 +30,8 @@ class HomeController extends Controller {
 	 */
 	public function home()
 	{
-		 return view('home');
+		$products = $this->products->products;
+		 return view('home')->with(['products' => $products]);;
 	}
-
-
-
 
 }

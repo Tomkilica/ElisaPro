@@ -6,23 +6,22 @@ function add(id) {
             if (data[id]) {
                 window.location = "/elisa/cart";
             } else {
-                data[id] = createObject();
+                data[id] = createObject(id);
                 $.cookie("cookieStore", JSON.stringify(data), {path: '/'});
             }
 
     } else {
         var products = [];
-        products[id] = createObject();
+        products[id] = createObject(id);
         $.cookie("cookieStore", JSON.stringify(products), {path: '/'});
     }
-
-
 }
-function createObject() {
+
+function createObject(idParam) {
     var product = new Object();
-    product.name = $("#title").text();
-    product.slika = $("#img").attr("src");
-    product.cena =  $("#price").text();
+    product.name = $("#title_" + idParam).text();
+    product.slika = $("#img_" + idParam).attr("src");
+    product.cena =  $("#price_" + idParam).text();
     product.kolicina = 1;
     return product;
 }

@@ -78,159 +78,17 @@
         </section>
         <section class="galleria">
             <div class="owl-carousel owl-theme">
+            @for($i = 1; $i <= count($products); $i++ )
                 <div class="item">
                     <div class="img">
-                        <img src={{ url('/resources/assets/img/products/deterdzent_za_staklo.png')}}>
-                        <button><a href={{ url('/single/5')}}>Više o proizvodu</a></button>
+                        <img src={{ url('/resources/assets/img/products')}}/{{$products[$i]['img']}}>
+                        <a href={{ url('/single')}}/{{$i}}>Više o proizvodu</a>
                     </div>
-                    <a>Deterdžent za čišćenje staklenih površina</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>269,00 din</h6>
+                    <a href={{ url('/single')}}/{{$i}}>{{$products[$i]['title']}}</a>
+                    <h6>{{$products[$i]['subtitle']}}</h6>
+                    <h6>{{$products[$i]['price']}}</h6>
                 </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/koncetrat_za_rucno_pranje_posudja.png')}}>
-                        <button><a href={{ url('/single/3')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Koncentrat za ručno pranje posuđa</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>599,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/koncetrat_za_rublje.png')}}>
-                        <button><a href={{ url('/single/2')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Koncentrat za ručno i mašinsko pranje rublja</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>599,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/koncetrat_za_rucno_pranje_tepiha.png')}}>
-                        <button><a href={{ url('/single/8')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Koncentrat za ručno pranje tepiha</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>599,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/krema_za_koznu_galanteriju.png')}}>
-                        <button><a href={{ url('/single/9')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Krema za kožnu galanteriju</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>479,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/omeksivac_za_rublje.png')}}>
-                        <button><a href={{ url('/single/1')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Omekšivač za rublje</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>359,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/pakovanje_za_kosu.png')}}>
-                        <button><a href={{ url('/single/10')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Pakovanje za kosu</a>
-                    <h6>nega kose</h6>
-                    <h6>599,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/pasta_za_domacinstvo.png')}}>
-                        <button><a href={{ url('/single/4')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Pasta za domaćinstvo</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>249,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/porodicna_krema.png')}}>
-                        <button><a href={{ url('/single/17')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Porodična krema</a>
-                    <h6>nega tela</h6>
-                    <h6>599,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/sampon_za_masnu_kosu.png')}}>
-                        <button><a href={{ url('/single/12')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Šampon za masnu kosu</a>
-                    <h6>nega kose</h6>
-                    <h6>349,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/sampon_kopriva.png')}}>
-                        <button><a href={{ url('/single/13')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Šampon za svaki dan</a>
-                    <h6>nega kose</h6>
-                    <h6>349,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/sampon_protiv_peruti.png')}}>
-                        <button><a href={{ url('/single/14')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Šampon protiv peruti</a>
-                    <h6>nega kose</h6>
-                    <h6>449,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/sanitar_gel.png')}}>
-                        <button><a href={{ url('/single/6')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Sanitar gel</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>339,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/tecni_sapun.png')}}>
-                        <button><a href={{ url('/single/15')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Tečni sapun za ruke i telo</a>
-                    <h6>lična higijena</h6>
-                    <h6>339,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/tecni_sapun_antibakterijska.png')}}>
-                        <button><a href={{ url('/single/16')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Antibakterijski tečni sapun</a>
-                    <h6>lična higijena</h6>
-                    <h6>369,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/univarzlni_koncetrat_za_ciscenje.png')}}>
-                        <button><a href={{ url('/single/7')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Univerzalni koncentrat za čišćenje</a>
-                    <h6>čišćenje domaćinstva</h6>
-                    <h6>599,00 din</h6>
-                </div>
-                <div class="item">
-                    <div class="img">
-                        <img src={{ url('/resources/assets/img/products/sampon_za_suvu_kosu.png')}}>
-                        <button><a href={{ url('/single/11')}}>Više o proizvodu</a></button>
-                    </div>
-                    <a>Šampon za suvu kosu</a>
-                    <h6>nega kose</h6>
-                    <h6>349,00 din</h6>
-                </div>
+            @endfor
             </div>
         </section>
         <footer>

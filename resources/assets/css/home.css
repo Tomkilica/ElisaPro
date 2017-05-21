@@ -151,7 +151,7 @@
     cursor: pointer;
     transition: color 1s;
 }
-.galleria .owl-carousel .item .img button {
+.galleria .owl-carousel .item .img a {
     width: 150px;
     line-height: 1.8;
     letter-spacing: 1.1;
@@ -168,7 +168,7 @@
     color: #fff;
     transition: background 1s, top 1s;
 }
-.galleria .owl-carousel .item .img button a {
+.galleria .owl-carousel .item .img  a {
     padding: 0;
     color: #fff;
     text-decoration: none;
@@ -180,11 +180,11 @@
     overflow: hidden;
     cursor: pointer;
 }
-.galleria .owl-carousel .item:hover button{
+.galleria .owl-carousel .item:hover a{
     top: 105px;
     transition: top 1s;
 }
-.galleria .owl-carousel .item .img button:hover {
+.galleria .owl-carousel .item .img a:hover {
     background: #a0d445;
     transition: background 1s;
 }

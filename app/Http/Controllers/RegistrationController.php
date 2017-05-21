@@ -80,7 +80,6 @@ class RegistrationController extends Controller
             $m->from('elisa@elisa.rs', 'Elisa info');
             $m->to($userParam->email, $userParam->firstName)->subject('Aktivacija naloga za Elisu prodavnicu!');
         });
-
     }
 
   
