@@ -12,6 +12,7 @@
         <input id="email" type="email"  name="email" placeholder="email adrese" value="{{ $email or old('email') }}" required>
         <div class="massage">
             @if($errors->get('email'))
+            <!-- <p>{{$errors->get('email')}}</p> -->
                     <p>Upisana email adresa mora biti ista kao i potvrđena email adresa.</p>
             @endif
         </div>
