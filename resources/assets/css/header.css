@@ -51,6 +51,21 @@ header .top {
     height: 20px;
     position: relative;
 }
+header .top a {
+    float: right;
+    padding-right: 20px;
+    padding-top: 1px;
+    font-size: 12px;
+}
+header .top a:hover,
+header .top a:focus,
+header .top a:active{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
 header .middle {
     display: flex;
     justify-content: space-between;
@@ -309,6 +324,14 @@ header nav .menu li:hover a {
     header .middle .cart {
         margin-bottom: 30px;
 
+    }
+
+}
+@media (max-width: 420px) {
+    header .top a {
+        padding-right: 17px;
+        padding-top: 2px;
+        font-size: 9px;
     }
 
 }

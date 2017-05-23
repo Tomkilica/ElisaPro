@@ -10,6 +10,9 @@ function modify_qty(val) {
     return new_qty;
 }
 
+
+
+
 $(document).ready(function () {
 
     if($.cookie("cookieStore")) {
@@ -48,5 +51,10 @@ $(document).ready(function () {
         product.cena =  $("#price").text();
         return product;
     }
+
+    $("#pop").on("click", function() {
+        $('#imagepreview').attr('src', $('#img').attr('src'));
+        $('#imagemodal').modal('show');
+    });
 
 });

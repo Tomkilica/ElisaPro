@@ -101,6 +101,14 @@
     color: #a0d445;
     transition: color 1s;
 }
+.modal-content {
+    width: 700px;
+}
+.modal-content .modal-body  img {
+    width: 650px;
+    display: block;
+    margin: auto;
+}
 
 @media (max-width: 1300px) {
     .product .box {

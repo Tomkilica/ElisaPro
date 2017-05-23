@@ -1,0 +1,23 @@
+.text {
+    width: 100%;
+    float: left;
+    margin: 50px auto;
+}
+.text .box {
+    width: 70%;
+    margin: 0 auto;
+}
+.text .box h3 {
+    line-height: 30px;
+}
+
+.text .box h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.text .box h6 {
+    color: #adadad;
+    padding-bottom: 10px;
+}

@@ -10,7 +10,9 @@
         <section class="product">
             <div class="box">
                 <div class="img">
-                    <img id="img" src={{ url('/resources/assets/img/products_large')}}/{{$product['img']}}>
+                    <a href="#" id="pop">
+                        <img id="img" src={{ url('/resources/assets/img/products_large')}}/{{$product['img']}}>
+                    </a>
                 </div>
                 <div class="content">
                     <div class="text">
@@ -49,6 +51,29 @@
                 </div>
             </div>
         </section>
+            <a href="#" id="pop">
+                <img id="imageresource" src="http://patyshibuya.com.br/wp-content/uploads/2014/04/04.jpg" style="width: 400px; height: 264px;">
+                Click to Enlarge
+            </a>
+
+            <!-- Creates the bootstrap modal where the image will appear -->
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="" id="imagepreview" >
+                        </div>
+                        {{--<div class="modal-footer">--}}
+                            {{--<button type="button" class="btn btn-default" data-dismiss="modal">Zatvoriti</button>--}}
+                        {{--</div>--}}
+                    </div>
+                </div>
+            </div>
+
+
     </body>
 @endsection
 

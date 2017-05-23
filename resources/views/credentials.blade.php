@@ -20,11 +20,11 @@
                     <div id="home" class="tab-pane fade in active">
                         <div class="form" >
                             <div class="wrapper">
-                                <p><span>Ime:</span> {{ $userView}}</p>
-                                <p><span>Prezime:</span> {{ $lastNameView}}</p>
-                                <p><span>Adresa:</span> {{ $addressView}}</p>
-                                <p><span>Poštanski broj:</span> {{ $userView}}</p>
-                                <p><span>Telefon:</span> {{ $telView}}</p>
+                                <p><span>Ime:</span> {{ $userView['firstName']}}</p>
+                                <p><span>Prezime:</span> {{ $userView['lastName']}}</p>
+                                <p><span>Adresa:</span> {{ $userView['address']}}</p>
+                                <p><span>Poštanski broj:</span> {{ $userView['zip']}}</p>
+                                <p><span>Telefon:</span> {{ $userView['tel']}}</p>
                             </div>
                             <input id="submit_user" type="submit" value="Potvrdi">
                         </div>

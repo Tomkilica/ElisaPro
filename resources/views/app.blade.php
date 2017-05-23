@@ -12,7 +12,11 @@
     </head>
     <body>
         <header>
-            <div class="top"></div>
+            <div class="top">
+                <a href="{{url('/protection')}}">Zaštita privatnosti podataka</a>
+                <a href="{{url('/terms')}}">Uslovi korišćenja</a>
+                <a href="{{url('/purchase')}}">Kupovina i isporuka</a>
+            </div>
             <div class="middle">
                 <div class="user">
                     <div class="login">

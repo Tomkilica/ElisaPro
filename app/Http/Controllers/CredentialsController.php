@@ -22,8 +22,7 @@ class CredentialsController extends Controller
         if (Auth::check())
         {
             $user = Auth::user();
-            return view('credentials')->with(['userView' => $user['firstName'], 'lastNameView' => $user['lastName'], 'addressView' => $user['address'], 'telView' => $user['tel']] );
-        }
+            return view('credentials')->with(['userView' => $user]);        }
         return redirect('login')->with(['msg' => "Molimo da se prijavite kako biste mogli da nastavite kupovinu!!!"]);
     }
 
