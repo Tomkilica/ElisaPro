@@ -1,5 +1,3 @@
-
-
 function add(id) {
     if($.cookie('cookieStore')) {
         var data = JSON.parse($.cookie("cookieStore"));
@@ -7,13 +5,13 @@ function add(id) {
                 window.location = "/elisa/cart";
             } else {
                 data[id] = createObject(id);
-                $.cookie("cookieStore", JSON.stringify(data), {path: '/'});
+                $.cookie("cookieStore", JSON.stringify(data), {path:'/'});
             }
 
     } else {
         var products = [];
         products[id] = createObject(id);
-        $.cookie("cookieStore", JSON.stringify(products), {path: '/'});
+        $.cookie("cookieStore", JSON.stringify(products), {path:'/'});
     }
 }
 

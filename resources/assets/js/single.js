@@ -1,16 +1,18 @@
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;
     var new_qty = parseInt(qty,10) + val;
-
     if (new_qty < 0) {
         new_qty = 0;
     }
-
     document.getElementById('qty').value = new_qty;
     return new_qty;
 }
 
-
+function coockieFun(id, value) {
+    var cookie = JSON.parse($.cookie("cookieStore"));
+    cookie[id]['kolicina'] = value;
+    $.cookie("cookieStore", JSON.stringify(cookie), {path:'/'});
+}
 
 
 $(document).ready(function () {
@@ -24,22 +26,21 @@ $(document).ready(function () {
 
     $("#insert").click(function(){
         if($.cookie('cookieStore')){
-            var data = JSON.parse($.cookie("cookieStore"));
-            if(data[$("#id").val()]){
-                var productCookie = data[$("#id").val()];
-                if($("#qty").val() != productCookie.kolicina) {
-                    data[$("#id").val()].kolicina = $("#qty").val();
-                    $.removeCookie("cookieStore");
-                    $.cookie("cookieStore", JSON.stringify(data));
+            var cookie = JSON.parse($.cookie("cookieStore"));
+            if(cookie[$("#id").val()]){
+                var productCookie = cookie[$("#id").val()];
+                var val = $("#qty").val();;
+                if(val != productCookie.kolicina) {
+                    coockieFun($("#id").val(), val);
                 }
             } else {
-                data[$("#id").val()] = createObject();
-                $.cookie("cookieStore", JSON.stringify(data), { path: '/' });
+                cookie[$("#id").val()] = createObject();
+                $.cookie("cookieStore", JSON.stringify(cookie), {path:'/'});
             }
         }else {
             var products = [];
             products[$("#id").val()] = createObject();
-            $.cookie("cookieStore", JSON.stringify(products), { path: '/' });
+            $.cookie("cookieStore", JSON.stringify(products) , {path:'/'});
         }
     });
 

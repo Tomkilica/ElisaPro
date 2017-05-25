@@ -22,18 +22,31 @@ $(document).ready(function () {
     });
 
      function buy_product(dataParam) {
-        dataParam.append('products',JSON.parse($.cookie("cookieStore")));
+        var productsId = "", productsKolicina= "";
+        var cookie = JSON.parse($.cookie("cookieStore"));
+        for (var i = cookie.length - 1; i >= 0; i--) {
+            if(cookie[i] !== null) {
+                productsId += i + ",";
+                productsKolicina += cookie[i].kolicina + ",";   
+            }
+        }
+        dataParam.append('productsId', productsId);
+        dataParam.append('productsKolicina', productsKolicina);
         dataParam.append('_token', $("[name='_token']").val());
          $.ajax({
             type: "post",
             url: "/elisa/credentials",
-            dataType: "json",
+            dataType: 'JSON',
             data: dataParam,
             enctype: "multipart/form-data",
             contentType: false,
             processData: false,
             success: function(data) {
-                console.log(data); // show response from the php script.
+                $.removeCookie("cookieStore");
+                window.location ="/elisa/success";
+            },
+            error: function (exception) {
+
             }
         });
      }

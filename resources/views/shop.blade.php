@@ -31,9 +31,9 @@
             <div class="{{$productsAll[$i]['class']}}">
                 <div class="item">
                     <div class="img">
-                    <img id="img_{{$i}}" src={{ url('/resources/assets/img/products')}}/{{$productsAll[$i]['img']}}>
-                    <a class="up" href={{ url('/single')}}/{{$i}}>Više o proizvodu</a>
-                    <button class="down add" onclick="add({{$i}})">Dodaj u korpu</button>
+                        <img id="img_{{$i}}" src={{ url('/resources/assets/img/products')}}/{{$productsAll[$i]['img']}}>
+                        <a class="up" href={{ url('/single')}}/{{$i}}>Više o proizvodu</a>
+                        <button class="down add" onclick="add({{$i}})">Dodaj u korpu</button>
                     </div>
                     <a id="title_{{$i}}">{{$productsAll[$i]['title']}}</a>
                     <h6>{{$productsAll[$i]['subtitle']}}</h6>

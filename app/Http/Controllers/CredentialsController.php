@@ -15,36 +15,94 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Products;
 
 class CredentialsController extends Controller
 {
+
+
+    public function __construct(Products $products){
+
+        // $this->middleware('guest');
+        $this->products = $products;
+    } 
+
     public function show(){
         if (Auth::check())
         {
             $user = Auth::user();
-            return view('credentials')->with(['userView' => $user]);        }
+            return view('credentials')->with(['userView' => $user]); 
+        }
         return redirect('login')->with(['msg' => "Molimo da se prijavite kako biste mogli da nastavite kupovinu!!!"]);
     }
 
     public function create(){
-        if (Auth::check()){
-            $user = Auth::user();
-            $products = (array) json_decode(request('products'));
-               dd($products[3]);
-            if(json_decode(request('user'))) {
-                $this->sendMailClient($user, $products);
-            } else {
-                $this->sendMailClient($user);
+        try {
+            if (Auth::check()) {
+                    
+                $products = $this->products->products;
+                $productBuy = array();
+                $user = Auth::user();
+                $post = $_POST;
+                $kolicinaId = $post['productsKolicina'];
+                $arraykolicina = explode(",", $kolicinaId);
+                $productsId = $post['productsId'];
+                $arrayId = explode(",", $productsId);
+                $totalPrice = 0;
+                for ($i=0; $i < count($arrayId); $i++) {
+                    if($arrayId[$i] > 0 && $arrayId[$i] != "" && $arraykolicina[$i] > 0) {
+                        $id = $arrayId[$i];
+                        $object = array();
+                        $price = (int) $products[$id]['price'];
+                        $productPrice = $arraykolicina[$i] * $price;
+                        $object = array( 
+                            'title' => $products[$id]['title'],
+                            'img' => $products[$id]['img'],
+                            'price' => $products[$id]['price'],
+                            'productPrice' => $productPrice,
+                            'kolicina' => $arraykolicina[$i]
+                        );
+                        $totalPrice +=  $productPrice; 
+                        array_push($productBuy, $object); 
+                    }
+                } 
+                
+                if($post['user'] == "true") {
+                    Mail::send('buyproducts', array('usernew' => false, 'title' => 'Narudžbina,'  , 'msg' => 'Poručilac ' . $user->firstName . " " . $user->lastName . ' na adresi - '. $user->address . ', poštanski broj ' . $user->zip . ' sa brojem telefona ' . $user->tel, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {
+                        $m->from('elisa@elisa.rs', 'Elisa Prodavnica');
+                        $m->to('elisa@elisa.rs')->subject('Narudzbina Proizvoda od strane ' . $user->firstName . ' ' . $user->lastName);
+                    });
+
+                    Mail::send('buyproducts', array('usernew' => false, 'title' => 'Poštovani/a '. $user->firstName . " " . $user->lastName  , 'msg'=>'Vaša narudžbina će biti poslata na ' . $user->address, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {
+                        $m->from('elisa@elisa.rs', 'Elisa Prodavnica');
+                        $m->to($user->email, $user->firstName . " " . $user->lastName )->subject('Kupovina Proizvoda na sajtu Elisa.rs');
+                    });
+                } else {
+                    $firstName = $post['firstname'];
+                    $lastName = $post['lastName'];
+                    $address = $post['address'];
+                    $zip = $post['zip'];
+                    $tel = $post['tel'];
+                    
+                    Mail::send('buyproducts', array('usernew' => true, 'title' => 'Narudžbina,'  , 'msg' => 'Poručilac ' . $user->firstName . " " . $user->lastName . ' sa brojem telefona ' . $user->tel, 'msgnew' => 'Za ' . $firstName . " " . $lastName .' na adresi - '. $address . ', poštanski broj ' . $zip . ' sa brojem telefona ' . $tel, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {
+                        $m->from('elisa@elisa.rs', 'Elisa Prodavnica');
+                        $m->to('elisa@elisa.rs')->subject('Narudzbina Proizvoda od strane ' . $user->firstName . ' ' . $user->lastName);
+                    });
+
+                    Mail::send('buyproducts', array('usernew' => true,'msgnew' => 'Za ' . $firstName . " " . $lastName .' na adresi - '. $address . ', poštanski broj ' . $zip . ' sa brojem telefona ' . $tel, 'title' => 'Poštovani/a '. $user->firstName . " " . $user->lastName  , 'msg'=>'Vaša narudžbina će biti poslata na ' . $address, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {
+                        $m->from('elisa@elisa.rs', 'Elisa Prodavnica');
+                        $m->to($user->email, $user->firstName . " " . $user->lastName )->subject('Kupovina Proizvoda na sajtu Elisa.rs');
+                    });
+                }
+                return "true";
             }
+        } catch (Exception $e) {
+            return $e;
         }
     }
 
-     public function sendMailClient(User $userParam, $products){
-        dd($products);
-        Mail::send('empty_buy', array('title' => 'Kupovina Proizvoda', 'msg'=>'Poštovani/a da bi ste aktivirali vaš nalog potrebno je da kliknete na link ispod', 'products' => $products), function ($m) use ($userParam) {
-            $m->from('elisa@elisa.rs', 'Elisa info');
-            $m->to($userParam->email, $userParam->firstName)->subject('Kupovina Proizvoda na Elisu prodavnicu!');
-        });
-    }
 
+    public function success() {
+      return view('succes'); 
+    }
 }

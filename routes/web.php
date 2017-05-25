@@ -16,6 +16,7 @@ Route::get('/home', 'HomeController@home');
 
 Auth::routes();
 
+
 Route::get('/single/{id}', 'ShopController@single');
 Route::get('/shop', 'ShopController@shop');
 
@@ -33,6 +34,7 @@ Route::get('/email/{id}/activate', 'LoginUserController@activateEmail');
 
 Route::get('/credentials', 'CredentialsController@show');
 Route::post('/credentials', 'CredentialsController@create');
+Route::get('/success', 'CredentialsController@success');
 
 Route::get('/terms', 'TermsController@terms');
 Route::get('/purchase', 'TermsController@purchase');

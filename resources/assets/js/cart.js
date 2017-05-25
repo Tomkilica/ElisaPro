@@ -10,8 +10,15 @@ function modify_qty(val, object, id) {
     object.value = new_qty;
     var cookie = JSON.parse($.cookie("cookieStore"));
     cookie[id]['kolicina'] = new_qty;
-    
     $.cookie("cookieStore", JSON.stringify(cookie), {path: '/'});
+    for(var i=1; i <= cookie.length; i++) { 
+        if(cookie[i]){
+            suma = "#total_" + i;
+            sum = parseInt(cookie[i]['cena']) * parseInt(cookie[i]['kolicina']);
+            total += sum;
+            $(suma).text(sum + ",00 din");
+        }
+    }
     $('#subtotal').text(total + ",00 din");
     return new_qty;
 }
