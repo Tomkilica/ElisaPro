@@ -32,7 +32,7 @@
                 <div class="item">
                     <div class="img">
                     <img id="img_{{$i}}" src={{ url('/resources/assets/img/products')}}/{{$productsAll[$i]['img']}}>
-                    <button class="up"><a href={{ url('/single')}}/{{$i}}>Više o proizvodu</a></button>
+                    <a class="up" href={{ url('/single')}}/{{$i}}>Više o proizvodu</a>
                     <button class="down add" onclick="add({{$i}})">Dodaj u korpu</button>
                     </div>
                     <a id="title_{{$i}}">{{$productsAll[$i]['title']}}</a>

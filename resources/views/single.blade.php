@@ -51,11 +51,6 @@
                 </div>
             </div>
         </section>
-            <a href="#" id="pop">
-                <img id="imageresource" src="http://patyshibuya.com.br/wp-content/uploads/2014/04/04.jpg" style="width: 400px; height: 264px;">
-                Click to Enlarge
-            </a>
-
             <!-- Creates the bootstrap modal where the image will appear -->
             <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
