@@ -12,7 +12,6 @@
     float: left;
     margin: 20px 0;
     padding: 60px 0;
-
 }
 .cart .box .cartContent input {
     width: 60px;
@@ -35,12 +34,10 @@
     background: #a0d445;
     transition: background 1s, border 1s;
     border: 2px solid #a0d445;
-
 }
 
 .cart .box .cartContent img {
     width: 90px;
-
 }
 .cart .box .cartContent .table,
 .cart .box .cartContent .table .row{
@@ -48,8 +45,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
 }
 .cart .box .cartContent .table .row {
     height: 110px;
@@ -72,8 +67,6 @@
     width: 35%;
 }
 
-
-
 .cart .box .cartContent .table .thead .th {
     font-size: 20px;
     text-align: center;
@@ -94,8 +87,6 @@
 .cart .box .cartContent .table  .td:first-child {
     padding-top: 10px;
 }
-
-
 .cart .box .cartContent .table  .td a:hover,
 .cart .box .cartContent .table  .td a:focus,
 .cart .box .cartContent .table  .td a:active {
@@ -108,11 +99,9 @@
     padding-bottom: 0;
 }
 .cart .box .cartContent .table  .td .delete {
-    width: 16px;
     cursor: pointer;
 }
 .cart .box .cartContent .table  .td .delete:hover {
-    color: #a0d445;
     transition: color 0.3s;
 }
 .cart .box .cartContent .send {

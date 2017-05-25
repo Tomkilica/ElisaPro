@@ -23,6 +23,25 @@ function modify_qty(val, object, id) {
     return new_qty;
 }
 
+function remove(id) {
+    var total= 0, sum = 0;
+    var cookie = JSON.parse($.cookie("cookieStore"));
+    cookie[id] = null;
+    $.cookie("cookieStore", JSON.stringify(cookie), {path: '/'});
+    for(var i=1; i <= cookie.length; i++) { 
+        if(cookie[i]){
+            suma = "#total_" + i;
+            sum = parseInt(cookie[i]['cena']) * parseInt(cookie[i]['kolicina']);
+            total += sum;
+            $(suma).text(sum + ",00 din");
+        }
+    }
+    $( "#cart_" + id ).remove();
+    $('#subtotal').text(total + ",00 din");
+}
+
+
+
 $(document).ready(function () {
     if($.cookie('cookieStore')) {
         var data = JSON.parse($.cookie("cookieStore"));
@@ -42,7 +61,7 @@ $(document).ready(function () {
                 $(_id).append("<div class='td' id='"+ price + "'>" + data[i]['cena'] + "</div>");
                 $(_id).append("<div class='td'><div class='qty'><input id='"+ idClick + "' value=" + data[i]['kolicina'] +"> <button onclick='modify_qty(-1, " + idClick + ", " + i +");'><i class='fa fa-angle-down' aria-hidden='true'></i></button><button onclick='modify_qty(1, " + idClick + ", " + i +");'><i class='fa fa-angle-up' aria-hidden='true'></i></button></div></div>");
                 $(_id).append("<div class='td' id='"+ suma + "'>" + sum + ",00 din</div>");
-                $(_id).append("<div class='td'><div class='delete'><i class='fa fa-times' aria-hidden='true'></i></div></div>")
+                $(_id).append("<div class='td'><button onclick='remove("+i+");' class='delete'><i class='fa fa-times' aria-hidden='true'></i></button></div>")
                 $('#subtotal').text(total + ",00 din");
             }
         }

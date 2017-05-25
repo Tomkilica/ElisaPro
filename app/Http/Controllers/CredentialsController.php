@@ -19,11 +19,7 @@ use App\Products;
 
 class CredentialsController extends Controller
 {
-
-
-    public function __construct(Products $products){
-
-        // $this->middleware('guest');
+    public function __construct(Products $products) {
         $this->products = $products;
     } 
 
@@ -95,6 +91,8 @@ class CredentialsController extends Controller
                     });
                 }
                 return "true";
+            } else {
+                    return redirect('login')->with(['msg' => "Molimo da se prijavite kako biste mogli da nastavite kupovinu!!!"]);
             }
         } catch (Exception $e) {
             return $e;
@@ -103,6 +101,10 @@ class CredentialsController extends Controller
 
 
     public function success() {
-      return view('succes'); 
+        if (Auth::check())
+        {
+            return view('success');
+        }
+        return redirect('login')->with(['msg' => "Molimo da se prijavite kako biste mogli da nastavite kupovinu!!!"]); 
     }
 }

@@ -50,3 +50,6 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 });
 
+Route::any('{query}',
+    function() { return redirect('/home'); })
+    ->where('query', '.*');

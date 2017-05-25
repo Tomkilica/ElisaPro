@@ -8,8 +8,8 @@
 <body>
     <div class="successful">
         <div class="box">
-            <h2>Uspešno ste naručili !!!</h2>
-            <h3>Molimo Vas.</h3>
+            <h2>Uspešno ste naručili!!!</h2>
+            <h3>Uskoro ćemo Vas kontaktirati u vezi sa dostavom poručenih proizvoda.</h3>
         </div>
     </div>
 </body>

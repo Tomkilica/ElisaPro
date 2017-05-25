@@ -1,7 +1,5 @@
 $(document).ready(function () {
     var data;
-
-
     $('#submit').click(function (e) {
         e.preventDefault();  
         data = new FormData();
@@ -33,7 +31,8 @@ $(document).ready(function () {
         dataParam.append('productsId', productsId);
         dataParam.append('productsKolicina', productsKolicina);
         dataParam.append('_token', $("[name='_token']").val());
-         $.ajax({
+        
+        $.ajax({
             type: "post",
             url: "/elisa/credentials",
             dataType: 'JSON',
@@ -42,7 +41,12 @@ $(document).ready(function () {
             contentType: false,
             processData: false,
             success: function(data) {
-                $.removeCookie("cookieStore");
+                for (var i = cookie.length - 1; i >= 0; i--) {
+                    if(cookie[i] !== null) {
+                        cookie[i] = null;
+                    }
+                }
+                 $.cookie("cookieStore", JSON.stringify(cookie), {path:'/'});
                 window.location ="/elisa/success";
             },
             error: function (exception) {

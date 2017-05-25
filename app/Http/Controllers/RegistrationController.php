@@ -74,10 +74,10 @@ class RegistrationController extends Controller
     }
 
     public function sendActivationMail(User $userParam){
-        $domain = "http://" . request()->getHttpHost() . '/elisa/email/' . $userParam->id . '/activate' ; 
+        $domain = "http://elisa.rs/email/" . $userParam->id . "/activate" ; 
 
         Mail::send('empty', array('title' => 'Aktivacija Naloga', 'msg'=>'Poštovani/a da bi ste aktivirali vaš nalog potrebno je da kliknete na link ispod', 'link' => $domain, 'btn'=>'Aktivacija naloga'), function ($m) use ($userParam) {
-            $m->from('elisa@elisa.rs', 'Elisa info');
+            $m->from('office@elisa.rs', 'Elisa info');
             $m->to($userParam->email, $userParam->firstName)->subject('Aktivacija naloga za Elisu prodavnicu!');
         });
     }
