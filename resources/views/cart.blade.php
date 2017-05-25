@@ -16,16 +16,16 @@
         <div class="box">
             <h2>Vaša Korpa</h2>
             <div class="cartContent">
-                <table class="table">
-                    <thead>
-                        <th>Proizvod</th>
-                        <th></th>
-                        <th>Cena</th>
-                        <th>Količina</th>
-                        <th>Ukupno</th>
-                    </thead>
-
-                </table>
+                <div class="table">
+                    <div class="thead">
+                        <div class="th">Proizvod</div>
+                        <div class="th"></div>
+                        <div class="th">Cena</div>
+                        <div class="th">Količina</div>
+                        <div class="th">Ukupno</div>
+                        <div class="th"></div>
+                    </div>
+                </div>
                 <div class="send">
                     <div id="subtotal"></div>
                     <button id="accept">Prihvati</button>

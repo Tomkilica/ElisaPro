@@ -21,7 +21,7 @@
     font-size: 19px;
     text-align: center;
 }
-.cart .box .cartContent table button {
+.cart .box .cartContent .table button {
     width: 30px;
     font-size: 18px;
     height: 30px;
@@ -31,7 +31,7 @@
     color: #fff;
     cursor: pointer;
 }
-.cart .box .cartContent table button:hover {
+.cart .box .cartContent .table button:hover {
     background: #a0d445;
     transition: background 1s, border 1s;
     border: 2px solid #a0d445;
@@ -40,48 +40,87 @@
 
 .cart .box .cartContent img {
     width: 90px;
+
 }
-.cart .box .cartContent table {
+.cart .box .cartContent .table,
+.cart .box .cartContent .table .row{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
 }
-.cart .box .cartContent table thead {
+.cart .box .cartContent .table .row {
+    height: 110px;
+    border-bottom: 1px solid #ebedf0;
+}
+
+.cart .box .cartContent .table .thead {
+    width: 100%;
+    float: left;
     border-bottom: 1px solid #ebedf0;
 
 }
-.cart .box .cartContent table thead th {
+.cart .box .cartContent .table .thead .th,
+.cart .box .cartContent .table  .td {
     width: 15%;
+    float: left;
+}
+.cart .box .cartContent .table .thead .th:nth-child(2),
+.cart .box .cartContent .table  .td:nth-child(2) {
+    width: 35%;
+}
+
+
+
+.cart .box .cartContent .table .thead .th {
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
     color: #adadad;
     font-weight: normal;
 }
-.cart .box .cartContent table thead th:nth-child(2) {
-    width: 30%;
+.cart .box .cartContent .table .thead .th:last-child,
+.cart .box .cartContent .table  .td:last-child {
+    width: 5%;
 }
-
-/*.cart .box .content table thead th:first-child {*/
-    /*width: 20%;*/
-/*}*/
-
-.cart .box .cartContent table  td {
+.cart .box .cartContent .table  .td {
+    font-size: 17px;
     text-align: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ebedf0;
-    line-height: 90px;
+    padding-top: 36px;
+
+}
+.cart .box .cartContent .table  .td:first-child {
+    padding-top: 10px;
 }
 
-.cart .box .cartContent table  td h4 {
+
+.cart .box .cartContent .table  .td a:hover,
+.cart .box .cartContent .table  .td a:focus,
+.cart .box .cartContent .table  .td a:active {
+    text-decoration: none;
+    color: #a0d445;
+    transition: color 0.3s;
+}
+.cart .box .cartContent .table  .td h4 {
     font-weight: normal;
     padding-bottom: 0;
 }
+.cart .box .cartContent .table  .td .delete {
+    width: 16px;
+    cursor: pointer;
+}
+.cart .box .cartContent .table  .td .delete:hover {
+    color: #a0d445;
+    transition: color 0.3s;
+}
 .cart .box .cartContent .send {
-    width: 25%;
+    width: 200px;
     margin-top: 50px;
     float: right;
 }
 .cart .box .cartContent .send #subtotal {
-    width: 200px;
     height: 30px;
     border: 2px solid #3f2803;
     font-size: 19px;
@@ -91,7 +130,7 @@
     font-size: 18px;
     color: #fff;
     cursor: pointer;
-    width: 200px;
+    width: 100%;
     height: 30px;
     letter-spacing: 1.5;
     background-color: #9f9381;
@@ -106,6 +145,122 @@
     border: 2px solid #a0d445;
 
 }
-.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+.btn-group-vertical>.btn-group:after,
+.btn-group-vertical>.btn-group:before,
+.btn-toolbar:after, .btn-toolbar:before,
+.clearfix:after, .clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.dl-horizontal dd:after,
+.dl-horizontal dd:before,
+.form-horizontal .form-group:after,
+.form-horizontal .form-group:before,
+.modal-footer:after,
+.modal-footer:before,
+.modal-header:after,
+.modal-header:before,
+.nav:after,
+.nav:before,
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before,
+.pager:after,
+.pager:before,
+.panel-body:after,
+.panel-body:before,
+.row:after,
+.row:before {
     content: none;
 }
+
+@media  (max-width: 1260px) {
+    .cart .box {
+        width: 95%;
+    }
+}
+@media (max-width: 900px) {
+    .cart .box .cartContent .table  .td:first-child {
+        width: 13%;
+    }
+    .cart .box .cartContent .table  .td:nth-child(4) {
+        width: 18%;
+    }
+    .cart .box .cartContent .table  .td:nth-child(6) {
+        width: 3%;
+    }
+}
+@media (max-width: 768px){
+    .cart .box .cartContent .table  .td {
+        font-size: 16px;
+    }
+    .cart .box .cartContent .table .thead {
+        display: none;
+    }
+    .cart .box .cartContent .table {
+        border-top: 1px solid #ebedf0;
+    }
+    .cart .box .cartContent .table .row {
+        height: 168px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .cart .box .cartContent .table  .td:first-child {
+        width: 20%;
+    }
+    .cart .box .cartContent .table  .td:nth-child(2),
+    .cart .box .cartContent .table  .td:nth-child(4) {
+        width: 50%;
+    }
+    .cart .box .cartContent .table  .td:nth-child(3) {
+        width: 21%;
+    }
+    .cart .box .cartContent .table  .td:nth-child(4),
+    .cart .box .cartContent .table  .td:nth-child(5),
+    .cart .box .cartContent .table  .td:nth-child(6) {
+        padding-top: 0;
+    }
+    .cart .box .cartContent .table  .td:nth-child(5) {
+        width: 25%;
+    }
+
+}
+@media (max-width: 550px) {
+    .cart .box .cartContent .table  .td {
+        font-size: 13px;
+    }
+
+    .cart .box .cartContent input {
+        width: 40px;
+    }
+    .cart .box .cartContent .table button {
+        width: 25px;
+    }
+    .cart .box .cartContent input,
+    .cart .box .cartContent .table button {
+        height: 25px;
+    }
+    .cart .box .cartContent .table button i,
+    .cart .box .cartContent input {
+        font-size: 14px;
+    }
+    .cart .box .cartContent .send {
+        width: 150px;
+    }
+    .cart .box .cartContent .send button {
+        font-size: 14px;
+    }
+    .cart .box .cartContent .send #subtotal {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+
+
+
+    }
