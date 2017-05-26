@@ -2,7 +2,7 @@ function add(id) {
     if($.cookie('cookieStore')) {
         var data = JSON.parse($.cookie("cookieStore"));
             if (data[id]) {
-                window.location = "/elisa/cart";
+                window.location = "/cart";
             } else {
                 data[id] = createObject(id);
                 $.cookie("cookieStore", JSON.stringify(data), {path:'/'});

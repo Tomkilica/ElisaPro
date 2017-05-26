@@ -56,7 +56,7 @@ $(document).ready(function () {
     }
 
    $('#accept').click(function(){
-        window.location ="/elisa/credentials";
+        window.location ="/credentials";
     });
 
 });

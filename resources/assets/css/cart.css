@@ -36,6 +36,16 @@
     border: 2px solid #a0d445;
 }
 
+.cart .box .cartContent .table button.delete {
+    background: transparent;
+    border: 0px;
+    color: #3f2803;
+}
+
+.cart .box .cartContent .table button.delete:hover {
+    color: #a0d445;
+}
+
 .cart .box .cartContent img {
     width: 90px;
 }
@@ -248,8 +258,4 @@
         font-size: 15px;
         line-height: 1.8;
     }
-
-
-
-
-    }
+}
