@@ -30,6 +30,7 @@
                         </div>
                     </div>
                     <div id="menu1" class="tab-pane fade">
+                        <p>Morate da popunite sva polja</p>
                         {{ csrf_field() }}
                         <input type="text" name="firstName" placeholder="ime kupca" value="{{ old('firstName') }}" >
                         <div class="massage">
