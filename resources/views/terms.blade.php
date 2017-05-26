@@ -5,7 +5,7 @@
         <link rel="stylesheet" href={{ url('/resources/assets/css/terms.css')}}>
     </head>
     <body>
-        <section class="text">
+        <section class="text-info">
             <div class="box">
                 <h3>Uslovi korišćenja</h3>
                 <h6>Dobrodošli na sajt Elisapro.net. Elisapro.net Vam omogućava korišćenje usluga i

@@ -6,7 +6,7 @@
         <link rel="stylesheet" href={{ url('/resources/assets/css/terms.css')}}>
     </head>
     <body>
-        <section class="text">
+        <section class="text-info">
             <div class="box">
                 <h3>Kupovina i isporuka</h3>
                 <h5>1. Pronađite proizvod koji želite da naručite</h5>

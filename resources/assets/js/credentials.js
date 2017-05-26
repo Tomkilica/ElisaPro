@@ -41,13 +41,17 @@ $(document).ready(function () {
             contentType: false,
             processData: false,
             success: function(data) {
-                for (var i = cookie.length - 1; i >= 0; i--) {
-                    if(cookie[i] !== null) {
-                        cookie[i] = null;
+                if(data == "false") {
+
+                } else {
+                    for (var i = cookie.length - 1; i >= 0; i--) {
+                        if(cookie[i] !== null) {
+                            cookie[i] = null;
+                        }
                     }
+                    $.cookie("cookieStore", JSON.stringify(cookie), {path:'/'});
+                    window.location ="/elisa/success";
                 }
-                 $.cookie("cookieStore", JSON.stringify(cookie), {path:'/'});
-                window.location ="/elisa/success";
             },
             error: function (exception) {
 

@@ -5,7 +5,7 @@
         <link rel="stylesheet" href={{ url('/resources/assets/css/terms.css')}}>
     </head>
     <body>
-        <section class="text">
+        <section class="text-info">
             <div class="box">
                 <h3>Zaštita privatnosti podataka</h3>
                 <h6>Da bismo uspešno obradili Vašu narudžbinu potrebni su nam Vaše ime i prezime,

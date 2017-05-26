@@ -19,12 +19,7 @@ class ShopController extends Controller
                   $product = $products[$idParam];
                   return view('single')->with(['idView' => $idParam,'product' => $product]);      
             }
-
             return redirect('/');
-            
-              // $idCrypte = Crypt::encrypt($idParam);
-              //     dd(Crypt::decrypt($idCrypte));
-              // return view('single')->with(['imgView' => $img, 'titleView' => $title, 'priceView' => $price, 'descriptionView' => $description, 'detaildescView' => $detailDescription ]);
       }
 
     public function shop(){

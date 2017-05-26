@@ -119,6 +119,17 @@
 }
 @media (max-width: 500px) {
     .regis form {
-        width: 65%;
+        width: 80%;
+    }
+    .regis form input {
+        margin-top: 5px;
+        padding-left: 2px;
+        letter-spacing: 0.5px;
+    }
+    .regis form input:nth-child(2) {
+        margin-top: 10px;
+    }
+    footer .text h5 {
+        letter-spacing: 0.5px;
     }
 }

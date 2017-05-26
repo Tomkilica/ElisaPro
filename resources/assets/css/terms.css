@@ -1,23 +1,28 @@
-.text {
+.text-info {
     width: 100%;
     float: left;
     margin: 50px auto;
 }
-.text .box {
+.text-info .box {
     width: 70%;
     margin: 0 auto;
 }
-.text .box h3 {
+.text-info .box h3 {
     line-height: 30px;
 }
 
-.text .box h5 {
+.text-info .box h5 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 600;
     line-height: 20px;
 }
-.text .box h6 {
+.text-info .box h6 {
     color: #adadad;
     padding-bottom: 10px;
+}
+@media(max-width: 600px) {
+    .text-info .box {
+        width: 95%;
+    }
 }

@@ -48,7 +48,6 @@ class CredentialsController extends Controller
                 for ($i=0; $i < count($arrayId); $i++) {
                     if($arrayId[$i] > 0 && $arrayId[$i] != "" && $arraykolicina[$i] > 0) {
                         $id = $arrayId[$i];
-                        $object = array();
                         $price = (int) $products[$id]['price'];
                         $productPrice = $arraykolicina[$i] * $price;
                         $object = array( 
@@ -74,6 +73,9 @@ class CredentialsController extends Controller
                         $m->to($user->email, $user->firstName . " " . $user->lastName )->subject('Kupovina Proizvoda na sajtu Elisa.rs');
                     });
                 } else {
+                    if(!$post['firstname'] || !$post['lastName'] || !$post['address'] || !$post['zip'] || !$post['tel'] ) {
+                        return "false"; 
+                    }
                     $firstName = $post['firstname'];
                     $lastName = $post['lastName'];
                     $address = $post['address'];
@@ -98,7 +100,6 @@ class CredentialsController extends Controller
             return $e;
         }
     }
-
 
     public function success() {
         if (Auth::check())
