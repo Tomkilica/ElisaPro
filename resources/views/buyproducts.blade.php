@@ -72,7 +72,7 @@
 	    </style>
 </head>
 <body>
-    <p>{{$title}}</p>
+    <p>{{$title}},</p>
 	
 	<p>{{$msg}}</p>
 
@@ -90,21 +90,19 @@
                         <th>Cena</th>
                         <th>Količina</th>
                         <th>Ukupno</th>
-                     	<th></th>
                     </thead>
                     <tfoot>
 					   <tr>
-					      <td id="subtotal">Ukupna cena proizvoda je: {{$totalPrice}},00 din</td>
+					      <td id="subtotal"><b>Ukupna cena proizvoda je: {{$totalPrice}},00 din</b></td>
 					    </tr>
 				    </tfoot>
 				    <tbody>
-					@for($i = 1; $i < count($products); $i++ )
+					@for($i = 0; $i < count($products); $i++ )
 							<tr class="row">
-								<td>{{$products[$i]['title']}}</td>
-								<td>{{$products[$i]['price']}}</td>
-								<td>{{$products[$i]['kolicina']}}</td>
-								<td>{{$products[$i]['productPrice']}},00 din</td>
-								<td><img src={{ url('/resources/assets/img/products')}}/{{$products[$i]['img']}}></td>
+								<td>{{$products[$i]['title']}} </td>
+								<td>| {{$products[$i]['price']}} |</td>
+								<td>{{$products[$i]['kolicina']}} |</td>
+								<td>|{{$products[$i]['productPrice']}},00 din </td>
 							</tr>
 				    @endfor
 				    </tbody>
@@ -112,7 +110,7 @@
             </div>
         </div>
     </section>
-
+    <br/>
 	<p >Hvala na poverenju, srdačan pozdrav Vaša Elisa</p>
 
 </body>
