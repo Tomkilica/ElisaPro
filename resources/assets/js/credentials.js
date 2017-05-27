@@ -50,6 +50,7 @@ $(document).ready(function () {
             processData: false,
             success: function(data) {
                 if(!data) {
+                    $('#msg').css('display', 'inline');
                 } else {
                     for (var i = cookie.length - 1; i >= 0; i--) {
                         if(cookie[i] !== null) {
@@ -60,9 +61,9 @@ $(document).ready(function () {
                     window.location ="/success";
                 }
             },
-            error: function (exception) {
-
-            }
+            // error: function (exception) {
+            //      $('#msg').css('display', 'inline');
+            // }
         });
      }
 
