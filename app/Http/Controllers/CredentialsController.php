@@ -52,7 +52,6 @@ class CredentialsController extends Controller
                         $productPrice = $arraykolicina[$i] * $price;
                         $object = array( 
                             'title' => $products[$id]['title'],
-                            'img' => $products[$id]['img'],
                             'price' => $products[$id]['price'],
                             'productPrice' => $productPrice,
                             'kolicina' => $arraykolicina[$i]
@@ -65,7 +64,7 @@ class CredentialsController extends Controller
                 if($post['user'] == "true") {
                     Mail::send('buyproducts', array('usernew' => false, 'title' => 'Narudžbina,'  , 'msg' => 'Poručilac ' . $user->firstName . " " . $user->lastName . ' na adresi - '. $user->address . ', poštanski broj ' . $user->zip . ' sa brojem telefona ' . $user->tel, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {
                         $m->from('elisa@elisa.rs', 'Elisa Prodavnica');
-                        $m->to('elisa@elisa.rs')->subject('Narudzbina Proizvoda od strane ' . $user->firstName . ' ' . $user->lastName);
+                        $m->to('office@elisa.rs')->subject('Narudzbina Proizvoda od strane ' . $user->firstName . ' ' . $user->lastName);
                     });
 
                     Mail::send('buyproducts', array('usernew' => false, 'title' => 'Poštovani/a '. $user->firstName . " " . $user->lastName  , 'msg'=>'Vaša narudžbina će biti poslata na ' . $user->address, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {
@@ -84,7 +83,7 @@ class CredentialsController extends Controller
                     
                     Mail::send('buyproducts', array('usernew' => true, 'title' => 'Narudžbina,'  , 'msg' => 'Poručilac ' . $user->firstName . " " . $user->lastName . ' sa brojem telefona ' . $user->tel, 'msgnew' => 'Za ' . $firstName . " " . $lastName .' na adresi - '. $address . ', poštanski broj ' . $zip . ' sa brojem telefona ' . $tel, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {
                         $m->from('elisa@elisa.rs', 'Elisa Prodavnica');
-                        $m->to('elisa@elisa.rs')->subject('Narudzbina Proizvoda od strane ' . $user->firstName . ' ' . $user->lastName);
+                        $m->to('office@elisa.rs')->subject('Narudzbina Proizvoda od strane ' . $user->firstName . ' ' . $user->lastName);
                     });
 
                     Mail::send('buyproducts', array('usernew' => true,'msgnew' => 'Za ' . $firstName . " " . $lastName .' na adresi - '. $address . ', poštanski broj ' . $zip . ' sa brojem telefona ' . $tel, 'title' => 'Poštovani/a '. $user->firstName . " " . $user->lastName  , 'msg'=>'Vaša narudžbina će biti poslata na ' . $address, 'products' => $productBuy, 'totalPrice' => $totalPrice), function ($m) use ($user) {

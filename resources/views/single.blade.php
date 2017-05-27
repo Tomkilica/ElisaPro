@@ -38,7 +38,7 @@
                                 </div>
                                 <div id="menu1" class="tab-pane fade">
                                     @foreach ($product['additionalInfo'] as $key => $value )
-                                         <p>{{$key}}:  {{$value}}</p>
+                                         <p>{{$key}}:  <span>{{$value}}</span></p>
                                     @endforeach
                                 </div>
                                 <div id="menu2" class="tab-pane fade">

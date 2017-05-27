@@ -34,15 +34,14 @@ $(document).ready(function () {
         
         $.ajax({
             type: "post",
-            url: "/elisa/credentials",
+            url: "/credentials",
             dataType: 'JSON',
             data: dataParam,
             enctype: "multipart/form-data",
             contentType: false,
             processData: false,
             success: function(data) {
-                if(data == "false") {
-
+                if(!data) {
                 } else {
                     for (var i = cookie.length - 1; i >= 0; i--) {
                         if(cookie[i] !== null) {
@@ -50,7 +49,7 @@ $(document).ready(function () {
                         }
                     }
                     $.cookie("cookieStore", JSON.stringify(cookie), {path:'/'});
-                    window.location ="/elisa/success";
+                    window.location ="/success";
                 }
             },
             error: function (exception) {

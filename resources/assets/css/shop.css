@@ -13,8 +13,7 @@ body {
     color: #555;
     border-bottom: 2px solid #a0d445;
 }
-
-img {
+.portfolioContainer .item .img img {
     margin:5px;
 }
 
@@ -27,9 +26,7 @@ img {
 }
 .isotope,
 .isotope .isotope-item {
-    /* change duration value to whatever you like */
-
-    -webkit-transition-duration: 0.8s;
+      -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     transition-duration: 0.8s;
 }
