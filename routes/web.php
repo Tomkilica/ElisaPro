@@ -41,6 +41,12 @@ Route::get('/purchase', 'TermsController@purchase');
 Route::get('/protection', 'TermsController@protection');
 
 
+Route::get('/edit', 'EditUser@show');
+Route::post('/edit', 'EditUser@update');
+
+
+
+
 
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {

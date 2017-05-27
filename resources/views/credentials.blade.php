@@ -30,33 +30,33 @@
                         </div>
                     </div>
                     <div id="menu1" class="tab-pane fade">
-                        <p>Morate da popunite sva polja</p>
+                        <p id="msg">Morate da popunite sva polja</p>
                         {{ csrf_field() }}
-                        <input type="text" name="firstName" placeholder="ime kupca" value="{{ old('firstName') }}" >
+                        <input type="text" id="firstName" name="firstName" placeholder="ime kupca" value="{{ old('firstName') }}" >
                         <div class="massage">
                             @if($errors->get('firstName'))
                                 <p>Polje mora biti popunjeno</p>
                             @endif
                         </div>
-                        <input type="text" name="lastName" placeholder="prezime kupca" value="{{ old('lastName') }}"  >
+                        <input type="text" id="lastName" name="lastName" placeholder="prezime kupca" value="{{ old('lastName') }}"  >
                         <div class="massage">
                             @if($errors->get('lastName'))
                                 <p>Polje mora biti popunjeno</p>
                             @endif
                         </div>
-                        <input type="text" name="address" placeholder="Ulica, broj i mesto dostave" value="{{ old('address') }}" >
+                        <input type="text" id="address" name="address" placeholder="Ulica, broj i mesto dostave" value="{{ old('address') }}" >
                         <div class="massage">
                             @if($errors->get('address'))
                                 <p>Polje mora biti popunjeno</p>
                             @endif
                         </div>
-                        <input type="text" name="zip" placeholder="poštanski broj" value="{{ old('zip') }}" >
+                        <input type="text" id="zip" name="zip" placeholder="poštanski broj" value="{{ old('zip') }}" >
                         <div class="massage">
                             @if($errors->get('zip'))
                                 <p>Polje mora biti popunjeno</p>
                             @endif
                         </div>
-                        <input type="tel" name="tel" placeholder="broj telefona" value="{{ old('tel') }}" >
+                        <input type="tel" id="tel" name="tel" placeholder="broj telefona" value="{{ old('tel') }}" >
                         <div class="massage">
                             @if($errors->get('tel'))
                                 <p>Polje mora biti popunjeno</p>

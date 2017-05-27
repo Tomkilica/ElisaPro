@@ -1,7 +1,15 @@
 $(document).ready(function () {
     var data;
     $('#submit').click(function (e) {
-        e.preventDefault();  
+        e.preventDefault();
+        if($('#firstName').val() == '' ||
+            $('#lastName').val() == '' ||
+            $('#address').val() == '' ||
+            $('#zip').val() == '' ||
+            $('#tel').val() == '') {
+            $('#msg').css('display', 'inline');
+            return false;
+        }
         data = new FormData();
         data.append('firstname', $("[name='firstName']").val());
         data.append('lastname', $("[name='lastName']").val());

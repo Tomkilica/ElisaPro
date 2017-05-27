@@ -60,6 +60,13 @@
     font-size: 14px;
     line-height: 1.7;
 }
+.regis form p:first-of-type {
+    color: #86da27;
+
+}
+.regis form p:first-of-type span {
+    padding-right: 10px;
+}
 .successful {
     float: left;
     width: 100%;
