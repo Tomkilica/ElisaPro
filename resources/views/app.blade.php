@@ -45,7 +45,7 @@
                 <div class="cart">
                     @if(Auth::check())
                         <div class="user_name">
-                            <a>{{Auth::user()->firstName}}  {{Auth::user()->lastName}}</a>
+                            <a href="{{url('/edit')}}">{{Auth::user()->firstName}}  {{Auth::user()->lastName}}</a>
                             <img src="{{ url('/resources/assets/img/icons/login.png')}}">
                         </div>
                     @endif
