@@ -1,7 +1,11 @@
 var totalSum = function(kolicinaParam, idParam) {
     var total= 0, sum = 0;
     var cookie = JSON.parse($.cookie("cookieStore"));
-    cookie[idParam]['kolicina'] = kolicinaParam;
+    if(kolicinaParam === 0) {
+        delete cookie[idParam];
+    } else {
+        cookie[idParam]['kolicina'] = kolicinaParam;
+    }
     $.cookie("cookieStore", JSON.stringify(cookie), {path: '/'});
     for(var i=1; i <= cookie.length; i++) { 
         if(cookie[i]){
@@ -17,8 +21,8 @@ var totalSum = function(kolicinaParam, idParam) {
 function modify_qty(val, object, idParam) {
     var total= 0, sum = 0;
     var new_qty = parseInt(object.value,10) + val;
-    if (new_qty < 0) {
-        new_qty = 0;
+    if (new_qty < 1) {
+        new_qty = 1;
     }
     object.value = new_qty;
     totalSum(new_qty, idParam);
@@ -27,6 +31,7 @@ function modify_qty(val, object, idParam) {
 
 function remove(idParam) {
     totalSum(0, idParam);
+
     $( "#cart_" + idParam ).remove();
 }
 

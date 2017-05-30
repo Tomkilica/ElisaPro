@@ -24,7 +24,7 @@
                             <input id="qty" value="0" />
                             <button id="down" onclick="modify_qty(-1)"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
                             <button id="up" onclick="modify_qty(1)"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
-                            <button id="insert">Dodaj u kolica</button>
+                            <button id="insert">Dodaj u korpu</button>
                         </div>
                         <div class="table">
                             <ul class="nav nav-tabs">

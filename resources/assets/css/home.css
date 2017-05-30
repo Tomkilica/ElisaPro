@@ -16,6 +16,20 @@
 .hero img {
     width: 100%;
 }
+.hero .title {
+    position: absolute;
+    z-index: 99999;
+    bottom: 5%;
+    right: 14%;
+    width: 600px;
+    letter-spacing: 0.02em;
+    text-align: right;
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 64px;
+    text-transform: uppercase;
+}
 .about {
     width: 100%;
     float: left;

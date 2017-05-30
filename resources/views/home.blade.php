@@ -34,6 +34,7 @@
         </header>
         <section class="hero">
             <div class="opacity"></div>
+            <div class="title">Uvek<br/>Prirodno<br> ELISA</div>
             <img src={{ url('/resources/assets/img/home/3.jpg')}}>
         </section>
         <section class="about">

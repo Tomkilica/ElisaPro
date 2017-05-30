@@ -13,7 +13,7 @@
         <div class="content">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">Adresa dostave</a></li>
-                <li><a data-toggle="tab" href="#menu1">Druga adresa</a></li>
+                <li><a data-toggle="tab" href="#menu1">Druga adresa dostave</a></li>
             </ul>
             <form method="POST"  enctype="multipart/form-data">
                 <div class="tab-content">

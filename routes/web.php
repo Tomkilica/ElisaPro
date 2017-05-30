@@ -44,11 +44,6 @@ Route::get('/protection', 'TermsController@protection');
 Route::get('/edit', 'EditUser@show');
 Route::post('/edit', 'EditUser@update');
 
-
-
-
-
-
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 	Route::get('password/reset/{token}', 'Auth\ResetsPasswords@showResetForm');
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');

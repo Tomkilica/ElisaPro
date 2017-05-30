@@ -3,10 +3,13 @@
     <meta charset="text/html">
 </head>
 <body>
-    <p class="title">{{$title}}</p>
+    <p class="title">{{$title}},</p>
 	
+	<br/>
 	<p class="msg">{{$msg}}</p>
-
-    <a href="{{$link}}" target="_blank">{{$btn}}</a>
+	<br/>
+	<a href="{{$link}}" target="_blank">{{$btn}}</a>
+	<br/>
+	<p >Hvala na poverenju, srdačan pozdrav Vaša Elisa</p>
 </body>
 </html>
