@@ -67,10 +67,16 @@ header .top a:active{
 
 
 header .middle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     width: 85%;
     margin: 0 auto;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 header .middle .user,
@@ -97,6 +103,9 @@ header .middle a {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.287em;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
     cursor: pointer;
     text-decoration: none;
@@ -111,6 +120,9 @@ header .middle .user_name a {
 header .middle a:hover,
 header .middle a:focus{
     color: #86da27;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
 
 }
@@ -132,7 +144,12 @@ header nav {
 header nav .menu {
     width: 100%;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 header nav .menu li {
@@ -149,6 +166,9 @@ header nav .menu a {
     font-size: 13px;
     font-weight: 700;
     line-height: 1.287em;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
     text-decoration: none;
 }
@@ -157,6 +177,9 @@ header nav .menu li:hover {
 }
 header nav .menu li:hover a {
     color: #86da27;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
 }
 @media (max-width: 1020px){

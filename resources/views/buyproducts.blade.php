@@ -45,7 +45,7 @@
             </thead>
             <tfoot>
 			   <tr>
-			      <td><b>Ukupna cena proizvoda je: {{$totalPrice}},00 din</b></td>
+			      <td><b>Ukupna cena proizvoda je: {{$totalPrice}},00 din + troškovi poštarine</b></td>
 			    </tr>
 		    </tfoot>
 		    <tbody>

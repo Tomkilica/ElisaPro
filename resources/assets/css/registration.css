@@ -41,12 +41,18 @@
     line-height: 2.5;
     letter-spacing: 1.5;
     cursor: pointer;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
     transition: background 1s;
     border: none;
 
 }
 .regis form input[type="submit"]:hover {
     background: #3f2803;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
     transition: background 1s;
 }
 .regis form .massage {
@@ -94,6 +100,9 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1.287em;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
     cursor: pointer;
     text-decoration: none;
@@ -102,6 +111,9 @@
 }
 .forgot_pass:hover {
     color: #86da27;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
 }
 @media(max-width:  1000px) { 

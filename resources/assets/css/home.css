@@ -71,7 +71,12 @@
     width: 85%;
     margin: 0 auto;
     margin-top: 200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 
 }
@@ -79,7 +84,12 @@
     width: 33.3%;
 }
 .counter .box .counter-el .number {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 .counter .box .counter-el .number span {
@@ -115,6 +125,9 @@
     padding: 10px 0px 0px 0px;
     display: block;
     font-family: "Open Sans";
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
     text-align: center;
     text-decoration: none;
@@ -149,6 +162,9 @@
 .galleria .owl-carousel .item a:hover{
     color: #a0d445;
     cursor: pointer;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 .galleria .owl-carousel .item .img a {
@@ -166,6 +182,9 @@
     margin-left: -75px;
     font-family: inherit;
     color: #fff;
+    -webkit-transition: background 1s, top 1s;
+    -moz-transition: background 1s, top 1s;
+    -o-transition: background 1s, top 1s;
     transition: background 1s, top 1s;
 }
 .galleria .owl-carousel .item .img  a {
@@ -182,10 +201,16 @@
 }
 .galleria .owl-carousel .item:hover a{
     top: 105px;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
     transition: top 1s;
 }
 .galleria .owl-carousel .item .img a:hover {
     background: #a0d445;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
     transition: background 1s;
 }
 .galleria .owl-theme .owl-nav {

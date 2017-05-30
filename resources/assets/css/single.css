@@ -66,11 +66,17 @@
     background-color: #9f9381;
     border: 2px solid #9f9381;
     margin-left: 25px;
+    -webkit-transition: background 1s, border 1s;
+    -moz-transition: background 1s, border 1s;
+    -o-transition: background 1s, border 1s;
     transition: background 1s, border 1s;
 }
 
 .product .box .content button:hover {
     background: #a0d445;
+    -webkit-transition: background 1s, border 1s;
+    -moz-transition: background 1s, border 1s;
+    -o-transition: background 1s, border 1s;
     transition: background 1s, border 1s;
     border: 2px solid #a0d445;
 }
@@ -90,6 +96,9 @@
 }
 .nav>li>a {
     font-size: 14px;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 .nav-tabs>li>a:hover {
@@ -99,6 +108,9 @@
 .nav>li>a:hover {
     background-color: transparent;
     color: #a0d445;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 .modal-content {

@@ -17,13 +17,13 @@
                     Dajemo kupcima mogućnost izbora uključujući mogucnost odluke da li žele ili
                     ne da se izbrišu sa mailing lista. Svi podaci o kupcima/korisnicima se strogo čuvaju i
                     dostupni su samo zaposlenima kojima su podaci nužni za obavljanje posla.
-                    Svi zaposleni Elisapro.net odgovorni su za poštovanje načela zaštite privatnosti.
+                    Svi zaposleni Elisa.rs odgovorni su za poštovanje načela zaštite privatnosti.
                     Obavezujemo se da prikupljene podatke ne koristimo ni u koje druge svrhe,
                     niti ih prosleđujemo trećim licima</h6>
                 <h6>Pored navedenih prikupljamo, analiziramo i obrađujemo podatke o proizvodima koje naši posetioci traže i
                     kupuju, kao i o stranicama koje posećuju. Te podatke koristimo da bismo poboljšali ponudu i
                     izgled naših stranica, i omogućili Vam jednostavnije korišćenje, sigurniju i udobniju kupovinu.</h6>
-                <h6>Elisapro.net koristi „cookies“ da Vam pomogne da prilagodite korišćenje interneta Vašim potrebama.
+                <h6>Elisa.rs koristi „cookies“ da Vam pomogne da prilagodite korišćenje interneta Vašim potrebama.
                     Cookie je tekstualni fajl koji je smešten na Vasem hard disku od strane web servera.
                     Cookie-ji ne mogu biti korišćeni da pokrenu program ili da isporuče virus Vašem računaru.
                     Cookie-ji su jedinstveno dodeljeni Vama, i jedino mogu biti pročitani od strane web servera u
